@@ -9,34 +9,34 @@ import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name = "RoamingTariff")
 @XmlType(propOrder = {"isInternetAvailable", "internationalCallPerMinutePrice"})
-public class RoamingTariff extends Tariff {
+public class RoamingTariff extends AbstractTariff {
 
-    private boolean isInternetAvailable;
-    private double internationalCallPerMinutePrice;
+    private Boolean isInternetAvailable;
+    private Double internationalCallPerMinutePrice;
 
     public RoamingTariff() {
     }
 
-    public RoamingTariff(String tariffName, Operator operator, CallPrices callPrices, double payroll, double smsPrice,
-                         Parameters parameters, boolean isInternetAvailable, double internationalCallPerMinutePrice) {
+    public RoamingTariff(String tariffName, Operator operator, CallPrices callPrices, Double payroll, Double smsPrice,
+                         Parameters parameters, Boolean isInternetAvailable, Double internationalCallPerMinutePrice) {
         super(tariffName, operator, callPrices, payroll, smsPrice, parameters);
         this.isInternetAvailable = isInternetAvailable;
         this.internationalCallPerMinutePrice = internationalCallPerMinutePrice;
     }
 
-    public boolean getIsInternetAvailable() {
+    public Boolean getIsInternetAvailable() {
         return isInternetAvailable;
     }
 
-    public void setIsInternetAvailable(boolean isInternetAvailable) {
+    public void setIsInternetAvailable(Boolean isInternetAvailable) {
         this.isInternetAvailable = isInternetAvailable;
     }
 
-    public double getInternationalCallPerMinutePrice() {
+    public Double getInternationalCallPerMinutePrice() {
         return internationalCallPerMinutePrice;
     }
 
-    public void setInternationalCallPerMinutePrice(double internationalCallPerMinutePrice) {
+    public void setInternationalCallPerMinutePrice(Double internationalCallPerMinutePrice) {
         this.internationalCallPerMinutePrice = internationalCallPerMinutePrice;
     }
 

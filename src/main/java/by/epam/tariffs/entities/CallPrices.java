@@ -4,50 +4,50 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement
-@XmlType(propOrder = {"inSideCallPerMinutePrice", "outSideCallPerMinutePrice", "cityLineCallPerMinutePrice"})
+@XmlType(propOrder = {"inComingCallPerMinutePrice", "outComingCallPerMinutePrice", "cityLineCallPerMinutePrice"})
 public class CallPrices {
 
-    private double inSideCallPerMinutePrice;
-    private double outSideCallPerMinutePrice;
-    private double cityLineCallPerMinutePrice;
+    private Double inComingCallPerMinutePrice;
+    private Double outComingCallPerMinutePrice;
+    private Double cityLineCallPerMinutePrice;
 
     public CallPrices() {
     }
 
-    public CallPrices(double inSideCallPerMinutePrice, double outSideCallPerMinutePrice, double cityLineCallPerMinutePrice) {
-        this.inSideCallPerMinutePrice = inSideCallPerMinutePrice;
-        this.outSideCallPerMinutePrice = outSideCallPerMinutePrice;
+    public CallPrices(Double inComingCallPerMinutePrice, Double outComingCallPerMinutePrice, Double cityLineCallPerMinutePrice) {
+        this.inComingCallPerMinutePrice = inComingCallPerMinutePrice;
+        this.outComingCallPerMinutePrice = outComingCallPerMinutePrice;
         this.cityLineCallPerMinutePrice = cityLineCallPerMinutePrice;
     }
 
-    public double getInSideCallPerMinutePrice() {
-        return inSideCallPerMinutePrice;
+    public Double getInComingCallPerMinutePrice() {
+        return inComingCallPerMinutePrice;
     }
 
-    public void setInSideCallPerMinutePrice(double inSideCallPerMinutePrice) {
-        this.inSideCallPerMinutePrice = inSideCallPerMinutePrice;
+    public void setInComingCallPerMinutePrice(Double inComingCallPerMinutePrice) {
+        this.inComingCallPerMinutePrice = inComingCallPerMinutePrice;
     }
 
-    public double getOutSideCallPerMinutePrice() {
-        return outSideCallPerMinutePrice;
+    public Double getOutComingCallPerMinutePrice() {
+        return outComingCallPerMinutePrice;
     }
 
-    public void setOutSideCallPerMinutePrice(double outSideCallPerMinutePrice) {
-        this.outSideCallPerMinutePrice = outSideCallPerMinutePrice;
+    public void setOutComingCallPerMinutePrice(Double outComingCallPerMinutePrice) {
+        this.outComingCallPerMinutePrice = outComingCallPerMinutePrice;
     }
 
-    public double getCityLineCallPerMinutePrice() {
+    public Double getCityLineCallPerMinutePrice() {
         return cityLineCallPerMinutePrice;
     }
 
-    public void setCityLineCallPerMinutePrice(double cityLineCallPerMinutePrice) {
+    public void setCityLineCallPerMinutePrice(Double cityLineCallPerMinutePrice) {
         this.cityLineCallPerMinutePrice = cityLineCallPerMinutePrice;
     }
 
     @Override
     public String toString() {
         String result = String.format(" Same operator - %.2f. Different operator - %.2f. City line - %.2f",
-                inSideCallPerMinutePrice, outSideCallPerMinutePrice, cityLineCallPerMinutePrice);
+                inComingCallPerMinutePrice, outComingCallPerMinutePrice, cityLineCallPerMinutePrice);
 
         return result;
     }

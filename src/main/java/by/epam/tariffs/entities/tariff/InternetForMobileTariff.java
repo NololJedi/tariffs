@@ -9,34 +9,34 @@ import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name = "InternetForMobileTariff")
 @XmlType(propOrder = {"megaBytesCount", "megaBytePrice"})
-public class InternetForMobileTariff extends Tariff {
+public class InternetForMobileTariff extends AbstractTariff {
 
-    private int megaBytesCount;
-    private double megaBytePrice;
+    private Integer megaBytesCount;
+    private Double megaBytePrice;
 
     public InternetForMobileTariff() {
     }
 
-    public InternetForMobileTariff(String tariffName, Operator operator, CallPrices callPrices, double payroll, double smsPrice,
-                                   Parameters parameters, int megaBytesCount, double megaBytePrice) {
+    public InternetForMobileTariff(String tariffName, Operator operator, CallPrices callPrices, Double payroll, Double smsPrice,
+                                   Parameters parameters, Integer megaBytesCount, Double megaBytePrice) {
         super(tariffName, operator, callPrices, payroll, smsPrice, parameters);
         this.megaBytesCount = megaBytesCount;
         this.megaBytePrice = megaBytePrice;
     }
 
-    public int getMegaBytesCount() {
+    public Integer getMegaBytesCount() {
         return megaBytesCount;
     }
 
-    public void setMegaBytesCount(int megaBytesCount) {
+    public void setMegaBytesCount(Integer megaBytesCount) {
         this.megaBytesCount = megaBytesCount;
     }
 
-    public double getMegaBytePrice() {
+    public Double getMegaBytePrice() {
         return megaBytePrice;
     }
 
-    public void setMegaBytePrice(double megaBytePrice) {
+    public void setMegaBytePrice(Double megaBytePrice) {
         this.megaBytePrice = megaBytePrice;
     }
 

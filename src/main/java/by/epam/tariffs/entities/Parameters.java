@@ -3,51 +3,51 @@ package by.epam.tariffs.entities;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-@XmlType(propOrder = {"isFavoriteNumberAvailable", "tariffing", "connectionPrice"})
+@XmlType(propOrder = {"isFavoriteNumberAvailable", "tariffication", "connectionPrice"})
 @XmlRootElement(name = "Parameters")
 public class Parameters {
 
-    private boolean isFavoriteNumberAvailable;
-    private int tariffing;
-    private double connectionPrice;
+    private Boolean isFavoriteNumberAvailable;
+    private Tariffication tariffication;
+    private Double connectionPrice;
 
     public Parameters() {
     }
 
-    public Parameters(boolean isFavoriteNumberAvailable, int tariffing, double connectionPrice) {
+    public Parameters(Boolean isFavoriteNumberAvailable, Tariffication tariffication, Double connectionPrice) {
         this.isFavoriteNumberAvailable = isFavoriteNumberAvailable;
-        this.tariffing = tariffing;
+        this.tariffication = tariffication;
         this.connectionPrice = connectionPrice;
     }
 
-    public boolean getIsFavoriteNumberAvailable() {
+    public Boolean getIsFavoriteNumberAvailable() {
         return isFavoriteNumberAvailable;
     }
 
-    public void setIsFavoriteNumberAvailable(boolean isFavoriteNumberAvailable) {
+    public void setIsFavoriteNumberAvailable(Boolean isFavoriteNumberAvailable) {
         this.isFavoriteNumberAvailable = isFavoriteNumberAvailable;
     }
 
-    public int getTariffing() {
-        return tariffing;
+    public Tariffication getTariffication() {
+        return tariffication;
     }
 
-    public void setTariffing(int tariffing) {
-        this.tariffing = tariffing;
+    public void setTariffication(Tariffication tariffication) {
+        this.tariffication = tariffication;
     }
 
-    public double getConnectionPrice() {
+    public Double getConnectionPrice() {
         return connectionPrice;
     }
 
-    public void setConnectionPrice(double connectionPrice) {
+    public void setConnectionPrice(Double connectionPrice) {
         this.connectionPrice = connectionPrice;
     }
 
     @Override
     public String toString() {
-        String result = String.format(" favorite number included - %s, tariffing - %d, connection price - %.2f",
-                isFavoriteNumberAvailable, tariffing, connectionPrice);
+        String result = String.format(" favorite number included - %s, tariffication - %s, connection price - %.2f",
+                isFavoriteNumberAvailable, tariffication, connectionPrice);
 
         return result;
     }

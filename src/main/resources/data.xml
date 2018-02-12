@@ -4,15 +4,15 @@
         <tariffName>Life-Roaming</tariffName>
         <operator>LIFE</operator>
         <callPrices>
-            <inSideCallPerMinutePrice>2.2</inSideCallPerMinutePrice>
-            <outSideCallPerMinutePrice>3.3</outSideCallPerMinutePrice>
+            <inComingCallPerMinutePrice>2.2</inComingCallPerMinutePrice>
+            <outComingCallPerMinutePrice>3.3</outComingCallPerMinutePrice>
             <cityLineCallPerMinutePrice>4.4</cityLineCallPerMinutePrice>
         </callPrices>
         <payroll>20.0</payroll>
         <smsPrice>2.0</smsPrice>
         <parameters>
             <isFavoriteNumberAvailable>true</isFavoriteNumberAvailable>
-            <tariffing>12</tariffing>
+            <tariffication>PER_MINUTES</tariffication>
             <connectionPrice>3.3</connectionPrice>
         </parameters>
         <isInternetAvailable>true</isInternetAvailable>
@@ -22,15 +22,15 @@
         <tariffName>MTS-Unlim</tariffName>
         <operator>MTS</operator>
         <callPrices>
-            <inSideCallPerMinutePrice>1.2</inSideCallPerMinutePrice>
-            <outSideCallPerMinutePrice>3.3</outSideCallPerMinutePrice>
+            <inComingCallPerMinutePrice>1.2</inComingCallPerMinutePrice>
+            <outComingCallPerMinutePrice>3.3</outComingCallPerMinutePrice>
             <cityLineCallPerMinutePrice>7.4</cityLineCallPerMinutePrice>
         </callPrices>
         <payroll>10.0</payroll>
         <smsPrice>1.0</smsPrice>
         <parameters>
             <isFavoriteNumberAvailable>false</isFavoriteNumberAvailable>
-            <tariffing>60</tariffing>
+            <tariffication>PER_MINUTES</tariffication>
             <connectionPrice>4.5</connectionPrice>
         </parameters>
         <megaBytesCount>1000</megaBytesCount>
@@ -40,15 +40,15 @@
         <tariffName>Velcom-Roaming</tariffName>
         <operator>VELCOM</operator>
         <callPrices>
-            <inSideCallPerMinutePrice>6.2</inSideCallPerMinutePrice>
-            <outSideCallPerMinutePrice>10.5</outSideCallPerMinutePrice>
+            <inComingCallPerMinutePrice>6.2</inComingCallPerMinutePrice>
+            <outComingCallPerMinutePrice>10.5</outComingCallPerMinutePrice>
             <cityLineCallPerMinutePrice>4.4</cityLineCallPerMinutePrice>
         </callPrices>
         <payroll>20.0</payroll>
         <smsPrice>2.0</smsPrice>
         <parameters>
             <isFavoriteNumberAvailable>true</isFavoriteNumberAvailable>
-            <tariffing>12</tariffing>
+            <tariffication>PER_MINUTES</tariffication>
             <connectionPrice>3.3</connectionPrice>
         </parameters>
         <isInternetAvailable>false</isInternetAvailable>
@@ -58,15 +58,15 @@
         <tariffName>Life3000</tariffName>
         <operator>LIFE</operator>
         <callPrices>
-            <inSideCallPerMinutePrice>2.2</inSideCallPerMinutePrice>
-            <outSideCallPerMinutePrice>3.3</outSideCallPerMinutePrice>
+            <inComingCallPerMinutePrice>2.2</inComingCallPerMinutePrice>
+            <outComingCallPerMinutePrice>3.3</outComingCallPerMinutePrice>
             <cityLineCallPerMinutePrice>4.4</cityLineCallPerMinutePrice>
         </callPrices>
         <payroll>10.0</payroll>
         <smsPrice>1.0</smsPrice>
         <parameters>
             <isFavoriteNumberAvailable>false</isFavoriteNumberAvailable>
-            <tariffing>12</tariffing>
+            <tariffication>PER_MINUTES</tariffication>
             <connectionPrice>3.3</connectionPrice>
         </parameters>
         <megaBytesCount>3000</megaBytesCount>
@@ -76,15 +76,15 @@
         <tariffName>MTS-Roaming</tariffName>
         <operator>MTS</operator>
         <callPrices>
-            <inSideCallPerMinutePrice>12.2</inSideCallPerMinutePrice>
-            <outSideCallPerMinutePrice>13.3</outSideCallPerMinutePrice>
+            <inComingCallPerMinutePrice>12.2</inComingCallPerMinutePrice>
+            <outComingCallPerMinutePrice>13.3</outComingCallPerMinutePrice>
             <cityLineCallPerMinutePrice>12.4</cityLineCallPerMinutePrice>
         </callPrices>
         <payroll>30.0</payroll>
         <smsPrice>0.0</smsPrice>
         <parameters>
             <isFavoriteNumberAvailable>true</isFavoriteNumberAvailable>
-            <tariffing>12</tariffing>
+            <tariffication>PER_SECONDS</tariffication>
             <connectionPrice>7.6</connectionPrice>
         </parameters>
         <isInternetAvailable>true</isInternetAvailable>
@@ -94,15 +94,15 @@
         <tariffName>Velcom-Business</tariffName>
         <operator>VELCOM</operator>
         <callPrices>
-            <inSideCallPerMinutePrice>2.0</inSideCallPerMinutePrice>
-            <outSideCallPerMinutePrice>3.0</outSideCallPerMinutePrice>
+            <inComingCallPerMinutePrice>2.0</inComingCallPerMinutePrice>
+            <outComingCallPerMinutePrice>3.0</outComingCallPerMinutePrice>
             <cityLineCallPerMinutePrice>4.0</cityLineCallPerMinutePrice>
         </callPrices>
         <payroll>17.0</payroll>
         <smsPrice>0.0</smsPrice>
         <parameters>
             <isFavoriteNumberAvailable>true</isFavoriteNumberAvailable>
-            <tariffing>60</tariffing>
+            <tariffication>PER_SECONDS</tariffication>
             <connectionPrice>3.3</connectionPrice>
         </parameters>
         <megaBytesCount>5000</megaBytesCount>

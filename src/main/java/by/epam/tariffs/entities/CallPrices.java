@@ -1,14 +1,21 @@
 package by.epam.tariffs.entities;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement
-@XmlType(propOrder = {"inComingCallPerMinutePrice", "outComingCallPerMinutePrice", "cityLineCallPerMinutePrice"})
 public class CallPrices {
 
+    @XmlAttribute
     private Double inComingCallPerMinutePrice;
+
+    @XmlAttribute
     private Double outComingCallPerMinutePrice;
+
+    @XmlAttribute
     private Double cityLineCallPerMinutePrice;
 
     public CallPrices() {

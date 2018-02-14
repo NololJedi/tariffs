@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Tariffs>
+    <RoamingTariff>
+        <tariffName>!1200Life</tariffName>
+        <operator>LIFE</operator>
+        <callPrices inComingCallPerMinutePrice="2.2" outComingCallPerMinutePrice="3.3" cityLineCallPerMinutePrice="4.4"/>
+        <payroll>20.0</payroll>
+        <smsPrice>2.0</smsPrice>
+        <parameters isFavoriteNumberAvailable="true">
+            <tariffication>PER_MINUTES</tariffication>
+            <connectionPrice>3.3</connectionPrice>
+        </parameters>
+        <isInternetAvailable>true</isInternetAvailable>
+        <internationalCallPerMinutePrice>2.2</internationalCallPerMinutePrice>
+    </RoamingTariff>
+</Tariffs>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Tariffs>
+    <RoamingTariff>
+        <tariffName>Life-Roaming</tariffName>
+        <operator>LIFE</operator>
+        <callPrices inComingCallPerMinutePrice="2.2" outComingCallPerMinutePrice="3.3" cityLineCallPerMinutePrice="4.4"/>
+        <payroll>20.0</payroll>
+        <smsPrice>2.0</smsPrice>
+        <parameters isFavoriteNumberAvailable="true">
+            <tariffication>PER_MINUTES</tariffication>
+            <connectionPrice>3.3</connectionPrice>
+        </parameters>
+        <isInternetAvailable>true</isInternetAvailable>
+        <internationalCallPerMinutePrice>2.2</internationalCallPerMinutePrice>
+    </RoamingTariff>
+    <InternetForMobileTariff>
+        <tariffName>MTS-Unlim</tariffName>
+        <operator>MTS</operator>
+        <callPrices inComingCallPerMinutePrice="1.2" outComingCallPerMinutePrice="3.3" cityLineCallPerMinutePrice="7.4"/>
+        <payroll>10.0</payroll>
+        <smsPrice>1.0</smsPrice>
+        <parameters isFavoriteNumberAvailable="false">
+            <tariffication>PER_MINUTES</tariffication>
+            <connectionPrice>4.5</connectionPrice>
+        </parameters>
+        <megaBytesCount>1000</megaBytesCount>
+        <megaBytePrice>0.5</megaBytePrice>
+    </InternetForMobileTariff>
+    <CitiLineTariff>
+        <tariffName>Beltelecom</tariffName>
+        <operator>VELCOM</operator>
+        <callPrices inComingCallPerMinutePrice="6.2" outComingCallPerMinutePrice="10.5" cityLineCallPerMinutePrice="4.4"/>
+        <payroll>20.0</payroll>
+        <smsPrice>2.0</smsPrice>
+        <parameters isFavoriteNumberAvailable="true">
+            <tariffication>PER_MINUTES</tariffication>
+            <connectionPrice>3.3</connectionPrice>
+        </parameters>
+        <isInternetAvailable>false</isInternetAvailable>
+        <internationalCallPerMinutePrice>3.2</internationalCallPerMinutePrice>
+        <isZALAAvilable>true</isZALAAvilable>
+    </CitiLineTariff>
+</Tariffs>

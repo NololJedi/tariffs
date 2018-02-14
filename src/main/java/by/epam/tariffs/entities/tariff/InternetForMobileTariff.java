@@ -6,9 +6,9 @@ import by.epam.tariffs.entities.Parameters;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.Objects;
 
 @XmlRootElement(name = "InternetForMobileTariff")
-@XmlType(propOrder = {"megaBytesCount", "megaBytePrice"})
 public class InternetForMobileTariff extends AbstractTariff {
 
     private Integer megaBytesCount;
@@ -38,6 +38,28 @@ public class InternetForMobileTariff extends AbstractTariff {
 
     public void setMegaBytePrice(Double megaBytePrice) {
         this.megaBytePrice = megaBytePrice;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) {
+            return true;
+        }
+        if (object == null || getClass() != object.getClass()) {
+            return false;
+        }
+        if (!super.equals(object)) {
+            return false;
+        }
+        InternetForMobileTariff that = (InternetForMobileTariff) object;
+        return Objects.equals(megaBytesCount, that.megaBytesCount) &&
+                Objects.equals(megaBytePrice, that.megaBytePrice);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(super.hashCode(), megaBytesCount, megaBytePrice);
     }
 
     @Override

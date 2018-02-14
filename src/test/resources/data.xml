@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Tariffs>
     <RoamingTariff>
-        <tariffName>Life-Roaming</tariffName>
-        <operator>LIFE</operator>
         <callPrices inComingCallPerMinutePrice="2.2" outComingCallPerMinutePrice="3.3" cityLineCallPerMinutePrice="4.4"/>
-        <payroll>20.0</payroll>
-        <smsPrice>2.0</smsPrice>
+        <internationalCallPerMinutePrice>2.2</internationalCallPerMinutePrice>
+        <isInternetAvailable>true</isInternetAvailable>
+        <operator>LIFE</operator>
         <parameters isFavoriteNumberAvailable="true">
             <tariffication>PER_MINUTES</tariffication>
             <connectionPrice>3.3</connectionPrice>
         </parameters>
-        <isInternetAvailable>true</isInternetAvailable>
-        <internationalCallPerMinutePrice>2.2</internationalCallPerMinutePrice>
+        <payroll>20.0</payroll>
+        <smsPrice>2.0</smsPrice>
+        <tariffName>Life-Roaming</tariffName>
     </RoamingTariff>
     <InternetForMobileTariff>
-        <tariffName>MTS-Unlim</tariffName>
-        <operator>MTS</operator>
         <callPrices inComingCallPerMinutePrice="1.2" outComingCallPerMinutePrice="3.3" cityLineCallPerMinutePrice="7.4"/>
-        <payroll>10.0</payroll>
-        <smsPrice>1.0</smsPrice>
+        <megaBytePrice>0.5</megaBytePrice>
+        <megaBytesCount>1000</megaBytesCount>
+        <operator>MTS</operator>
         <parameters isFavoriteNumberAvailable="false">
             <tariffication>PER_MINUTES</tariffication>
             <connectionPrice>4.5</connectionPrice>
         </parameters>
-        <megaBytesCount>1000</megaBytesCount>
-        <megaBytePrice>0.5</megaBytePrice>
+        <payroll>10.0</payroll>
+        <smsPrice>1.0</smsPrice>
+        <tariffName>MTS-Unlim</tariffName>
     </InternetForMobileTariff>
     <RoamingTariff>
-        <tariffName>Velcom-Roaming</tariffName>
-        <operator>VELCOM</operator>
         <callPrices inComingCallPerMinutePrice="6.2" outComingCallPerMinutePrice="10.5" cityLineCallPerMinutePrice="4.4"/>
-        <payroll>20.0</payroll>
-        <smsPrice>2.0</smsPrice>
+        <internationalCallPerMinutePrice>3.2</internationalCallPerMinutePrice>
+        <isInternetAvailable>false</isInternetAvailable>
+        <operator>VELCOM</operator>
         <parameters isFavoriteNumberAvailable="true">
             <tariffication>PER_MINUTES</tariffication>
             <connectionPrice>3.3</connectionPrice>
         </parameters>
-        <isInternetAvailable>false</isInternetAvailable>
-        <internationalCallPerMinutePrice>3.2</internationalCallPerMinutePrice>
+        <payroll>20.0</payroll>
+        <smsPrice>2.0</smsPrice>
+        <tariffName>Velcom-Roaming</tariffName>
     </RoamingTariff>
     <InternetForMobileTariff>
-        <tariffName>Life3000</tariffName>
-        <operator>LIFE</operator>
         <callPrices inComingCallPerMinutePrice="2.2" outComingCallPerMinutePrice="3.3" cityLineCallPerMinutePrice="4.4"/>
-        <payroll>10.0</payroll>
-        <smsPrice>1.0</smsPrice>
+        <megaBytePrice>0.1</megaBytePrice>
+        <megaBytesCount>3000</megaBytesCount>
+        <operator>LIFE</operator>
         <parameters isFavoriteNumberAvailable="false">
             <tariffication>PER_MINUTES</tariffication>
             <connectionPrice>3.3</connectionPrice>
         </parameters>
-        <megaBytesCount>3000</megaBytesCount>
-        <megaBytePrice>0.1</megaBytePrice>
+        <payroll>10.0</payroll>
+        <smsPrice>1.0</smsPrice>
+        <tariffName>Life3000</tariffName>
     </InternetForMobileTariff>
     <RoamingTariff>
-        <tariffName>MTS-Roaming</tariffName>
-        <operator>MTS</operator>
         <callPrices inComingCallPerMinutePrice="12.2" outComingCallPerMinutePrice="13.3" cityLineCallPerMinutePrice="12.4"/>
-        <payroll>30.0</payroll>
-        <smsPrice>0.0</smsPrice>
+        <internationalCallPerMinutePrice>3.8</internationalCallPerMinutePrice>
+        <isInternetAvailable>true</isInternetAvailable>
+        <operator>MTS</operator>
         <parameters isFavoriteNumberAvailable="true">
             <tariffication>PER_SECONDS</tariffication>
             <connectionPrice>7.6</connectionPrice>
         </parameters>
-        <isInternetAvailable>true</isInternetAvailable>
-        <internationalCallPerMinutePrice>3.8</internationalCallPerMinutePrice>
+        <payroll>30.0</payroll>
+        <smsPrice>0.0</smsPrice>
+        <tariffName>MTS-Roaming</tariffName>
     </RoamingTariff>
     <InternetForMobileTariff>
-        <tariffName>Velcom-Business</tariffName>
-        <operator>VELCOM</operator>
         <callPrices inComingCallPerMinutePrice="2.0" outComingCallPerMinutePrice="3.0" cityLineCallPerMinutePrice="4.0"/>
-        <payroll>17.0</payroll>
-        <smsPrice>0.0</smsPrice>
+        <megaBytePrice>0.1</megaBytePrice>
+        <megaBytesCount>5000</megaBytesCount>
+        <operator>VELCOM</operator>
         <parameters isFavoriteNumberAvailable="true">
             <tariffication>PER_SECONDS</tariffication>
             <connectionPrice>3.3</connectionPrice>
         </parameters>
-        <megaBytesCount>5000</megaBytesCount>
-        <megaBytePrice>0.1</megaBytePrice>
+        <payroll>17.0</payroll>
+        <smsPrice>0.0</smsPrice>
+        <tariffName>Velcom-Business</tariffName>
     </InternetForMobileTariff>
 </Tariffs>

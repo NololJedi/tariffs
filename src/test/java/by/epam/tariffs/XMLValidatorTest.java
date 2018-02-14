@@ -1,7 +1,6 @@
 package by.epam.tariffs;
 
 import by.epam.tariffs.exceptions.IncorrectFileException;
-import by.epam.tariffs.exceptions.XMLValidationException;
 import by.epam.tariffs.util.XMLValidator;
 import com.tngtech.java.junit.dataprovider.DataProvider;
 import com.tngtech.java.junit.dataprovider.DataProviderRunner;
@@ -11,13 +10,14 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import static by.epam.tariffs.DataForTests.VALID_DATA_FILE_PATH;
+
 @RunWith(DataProviderRunner.class)
 public class XMLValidatorTest {
 
     private static XMLValidator xmlValidator;
 
     private final static String XSD_SCHEMA_FILE_PATH = "./src/test/resources/schema.xsd";
-    private final static String VALID_DATA_FILE_PATH = "./src/test/resources/data.xml";
 
     @BeforeClass
     public static void setXmlValidator() {
@@ -41,7 +41,7 @@ public class XMLValidatorTest {
     }
 
     @DataProvider
-    public static Object[][] notValidXMLFiles(){
+    public static Object[][] notValidXMLFiles() {
         String incorrectTariffType = "./src/test/resources/incorrect_tariff_type.xml";
         String incorrectAttributeOperator = "./src/test/resources/incorrect_attribute_operator.xml";
         String incorrectAttributeName = "./src/test/resources/incorrect_attribute_name.xml";
@@ -56,30 +56,32 @@ public class XMLValidatorTest {
     }
 
     @Test
-    public void shouldValidationBeSuccessful() throws XMLValidationException, IncorrectFileException {
+    public void shouldValidationBeSuccessful() throws IncorrectFileException {
         boolean validationResult = xmlValidator.validateXMLFIle(VALID_DATA_FILE_PATH, XSD_SCHEMA_FILE_PATH);
 
         Assert.assertTrue(validationResult);
     }
 
-    @Test(expected = XMLValidationException.class)
+    @Test
     @UseDataProvider("notValidXMLFiles")
-    public void shouldValidationBeNotSuccessful(String xmlFilePath) throws XMLValidationException, IncorrectFileException {
-       xmlValidator.validateXMLFIle(xmlFilePath, XSD_SCHEMA_FILE_PATH);
+    public void shouldValidationBeNotSuccessful(String xmlFilePath) throws IncorrectFileException {
+        boolean validationResult = xmlValidator.validateXMLFIle(xmlFilePath, XSD_SCHEMA_FILE_PATH);
+
+        Assert.assertFalse(validationResult);
     }
 
     @Test(expected = IllegalArgumentException.class)
     @UseDataProvider("incorrectInputParameters")
     public void shouldValidationCauseIllegalArgumentException(String xmlFilePath, String xsdFilePath)
-            throws XMLValidationException, IncorrectFileException {
+            throws IncorrectFileException {
         xmlValidator.validateXMLFIle(xmlFilePath, xsdFilePath);
     }
 
     @Test(expected = IncorrectFileException.class)
-    public void shouldValidationCauseIncorrectFileException() throws IncorrectFileException, XMLValidationException {
+    public void shouldValidationCauseIncorrectFileException() throws IncorrectFileException {
         String incorrectFilePath = ".src/test/resources/incorrect_attribute_smsPrice.xml";
 
-        xmlValidator.validateXMLFIle(incorrectFilePath,XSD_SCHEMA_FILE_PATH);
+        xmlValidator.validateXMLFIle(incorrectFilePath, XSD_SCHEMA_FILE_PATH);
     }
 
 }

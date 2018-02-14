@@ -6,9 +6,9 @@ import by.epam.tariffs.entities.Parameters;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.Objects;
 
 @XmlRootElement(name = "RoamingTariff")
-@XmlType(propOrder = {"isInternetAvailable", "internationalCallPerMinutePrice"})
 public class RoamingTariff extends AbstractTariff {
 
     private Boolean isInternetAvailable;
@@ -38,6 +38,28 @@ public class RoamingTariff extends AbstractTariff {
 
     public void setInternationalCallPerMinutePrice(Double internationalCallPerMinutePrice) {
         this.internationalCallPerMinutePrice = internationalCallPerMinutePrice;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) {
+            return true;
+        }
+        if (object == null || getClass() != object.getClass()) {
+            return false;
+        }
+        if (!super.equals(object)) {
+            return false;
+        }
+        RoamingTariff that = (RoamingTariff) object;
+        return Objects.equals(isInternetAvailable, that.isInternetAvailable) &&
+                Objects.equals(internationalCallPerMinutePrice, that.internationalCallPerMinutePrice);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(super.hashCode(), isInternetAvailable, internationalCallPerMinutePrice);
     }
 
     @Override

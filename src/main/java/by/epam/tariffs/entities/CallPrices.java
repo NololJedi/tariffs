@@ -4,6 +4,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.Objects;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement
@@ -49,6 +50,26 @@ public class CallPrices {
 
     public void setCityLineCallPerMinutePrice(Double cityLineCallPerMinutePrice) {
         this.cityLineCallPerMinutePrice = cityLineCallPerMinutePrice;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object){
+            return true;
+        }
+        if (object == null || getClass() != object.getClass()){
+            return false;
+        }
+        CallPrices that = (CallPrices) object;
+        return Objects.equals(inComingCallPerMinutePrice, that.inComingCallPerMinutePrice) &&
+                Objects.equals(outComingCallPerMinutePrice, that.outComingCallPerMinutePrice) &&
+                Objects.equals(cityLineCallPerMinutePrice, that.cityLineCallPerMinutePrice);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(inComingCallPerMinutePrice, outComingCallPerMinutePrice, cityLineCallPerMinutePrice);
     }
 
     @Override

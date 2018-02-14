@@ -24,6 +24,7 @@ public class JAXBParser {
             Tariffs tariffs = (Tariffs) unmarshaller.unmarshal(fileReader);
 
             return tariffs;
+
         } catch (JAXBException exception) {
             throw new XMLParserException("Parsing failed.", exception);
         } catch (FileNotFoundException exception) {

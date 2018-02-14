@@ -5,9 +5,11 @@ import by.epam.tariffs.entities.Operator;
 import by.epam.tariffs.entities.Parameters;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
+import java.util.Objects;
 
-@XmlRootElement
+@XmlTransient
 @XmlType(propOrder = {"tariffName", "operator", "callPrices", "payroll", "smsPrice", "parameters"})
 public abstract class AbstractTariff {
 
@@ -76,6 +78,29 @@ public abstract class AbstractTariff {
 
     public void setCallPrices(CallPrices callPrices) {
         this.callPrices = callPrices;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) {
+            return true;
+        }
+        if (object == null || getClass() != object.getClass()) {
+            return false;
+        }
+        AbstractTariff that = (AbstractTariff) object;
+        return Objects.equals(tariffName, that.tariffName) &&
+                operator == that.operator &&
+                Objects.equals(callPrices, that.callPrices) &&
+                Objects.equals(payroll, that.payroll) &&
+                Objects.equals(smsPrice, that.smsPrice) &&
+                Objects.equals(parameters, that.parameters);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(tariffName, operator, callPrices, payroll, smsPrice, parameters);
     }
 
     @Override

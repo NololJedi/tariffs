@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Tariffs>
-    <RoamingTariff>
-        <tariffName>!1200Life</tariffName>
+    <RoamingTariff tariffName="!!!Life-Roaming">
         <operator>LIFE</operator>
-        <callPrices inComingCallPerMinutePrice="2.2" outComingCallPerMinutePrice="3.3" cityLineCallPerMinutePrice="4.4"/>
+        <callPrices inComingCallPerMinutePrice="2.2" outComingCallPerMinutePrice="3.3"
+                    cityLineCallPerMinutePrice="4.4"/>
         <payroll>20.0</payroll>
         <smsPrice>2.0</smsPrice>
         <parameters isFavoriteNumberAvailable="true">

@@ -10,13 +10,13 @@ import java.util.Objects;
 @XmlRootElement
 public class CallPrices {
 
-    @XmlAttribute
+    @XmlAttribute(required = true)
     private Double inComingCallPerMinutePrice;
 
     @XmlAttribute
     private Double outComingCallPerMinutePrice;
 
-    @XmlAttribute
+    @XmlAttribute(required = true)
     private Double cityLineCallPerMinutePrice;
 
     public CallPrices() {
@@ -54,10 +54,10 @@ public class CallPrices {
 
     @Override
     public boolean equals(Object object) {
-        if (this == object){
+        if (this == object) {
             return true;
         }
-        if (object == null || getClass() != object.getClass()){
+        if (object == null || getClass() != object.getClass()) {
             return false;
         }
         CallPrices that = (CallPrices) object;

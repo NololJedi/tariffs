@@ -5,7 +5,6 @@ import by.epam.tariffs.entities.Operator;
 import by.epam.tariffs.entities.Parameters;
 
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 import java.util.Objects;
 
 @XmlRootElement(name = "InternetForMobileTariff")
@@ -15,6 +14,10 @@ public class InternetForMobileTariff extends AbstractTariff {
     private Double megaBytePrice;
 
     public InternetForMobileTariff() {
+    }
+
+    public InternetForMobileTariff(AbstractTariff abstractTariff){
+        super(abstractTariff);
     }
 
     public InternetForMobileTariff(String tariffName, Operator operator, CallPrices callPrices, Double payroll, Double smsPrice,

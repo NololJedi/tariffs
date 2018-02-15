@@ -50,8 +50,15 @@ public class Tariffs {
         Tariffs thatTariffs = (Tariffs) object;
         List<AbstractTariff> thatTariffsList = thatTariffs.getListOfTariffs();
 
-        for (int listIndex = 0; listIndex < listOfTariffs.size(); listIndex++) {
-            if (!listOfTariffs.get(listIndex).equals(thatTariffsList.get(listIndex))){
+        int currentListSize = listOfTariffs.size();
+        int testingListSize = thatTariffsList.size();
+
+        if (currentListSize != testingListSize) {
+            return false;
+        }
+
+        for (int listIndex = 0; listIndex < currentListSize; listIndex++) {
+            if (!listOfTariffs.contains(thatTariffsList.get(listIndex))) {
                 return false;
             }
         }

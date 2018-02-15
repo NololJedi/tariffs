@@ -10,6 +10,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import static by.epam.tariffs.DataForTests.INCORRECT_TARIFF_TYPE;
 import static by.epam.tariffs.DataForTests.VALID_DATA_FILE_PATH;
 
 @RunWith(DataProviderRunner.class)
@@ -42,7 +43,6 @@ public class XMLValidatorTest {
 
     @DataProvider
     public static Object[][] notValidXMLFiles() {
-        String incorrectTariffType = "./src/test/resources/incorrect_tariff_type.xml";
         String incorrectAttributeOperator = "./src/test/resources/incorrect_attribute_operator.xml";
         String incorrectAttributeName = "./src/test/resources/incorrect_attribute_name.xml";
         String missedAttribute = "./src/test/resources/missed_attribute.xml";
@@ -51,7 +51,7 @@ public class XMLValidatorTest {
                 {incorrectAttributeName},
                 {missedAttribute},
                 {incorrectAttributeOperator},
-                {incorrectTariffType}
+                {INCORRECT_TARIFF_TYPE}
         };
     }
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Tariffs>
-    <RoamingTariff>
-        <tariffName>Life-Roaming</tariffName>
+    <RoamingTariff tariffName="Life-Roaming">
         <operator>LIFE</operator>
-        <payroll>20.0</payroll>
+        <callPrices inComingCallPerMinutePrice="2.2" outComingCallPerMinutePrice="3.3"
+                    cityLineCallPerMinutePrice="4.4"/>
         <smsPrice>2.0</smsPrice>
         <parameters isFavoriteNumberAvailable="true">
             <tariffication>PER_MINUTES</tariffication>

@@ -11,6 +11,7 @@ import java.util.List;
 public class DataForTests {
 
     public static final String VALID_DATA_FILE_PATH = "./src/test/resources/data.xml";
+    public static final String INCORRECT_TARIFF_TYPE = "./src/test/resources/incorrect_tariff_type.xml";
 
     public static Tariffs getTariffs() {
         CallPrices callPrices = new CallPrices(2.2, 3.3, 4.4);

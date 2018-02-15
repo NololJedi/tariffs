@@ -2,13 +2,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
     <xs:complexType name="AbstractTariff">
         <xs:sequence>
-            <xs:element name="tariffName">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:pattern value="\w+.\w+"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
             <xs:element name="operator">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
@@ -20,9 +13,9 @@
             </xs:element>
             <xs:element name="callPrices">
                 <xs:complexType>
-                        <xs:attribute name="inComingCallPerMinutePrice" use="required" type="xs:double"/>
-                        <xs:attribute name="outComingCallPerMinutePrice" default="0" type="xs:double"/>
-                        <xs:attribute name="cityLineCallPerMinutePrice" use="required" type="xs:double"/>
+                    <xs:attribute name="inComingCallPerMinutePrice" use="required" type="xs:double"/>
+                    <xs:attribute name="outComingCallPerMinutePrice" default="0" type="xs:double"/>
+                    <xs:attribute name="cityLineCallPerMinutePrice" use="required" type="xs:double"/>
                 </xs:complexType>
             </xs:element>
             <xs:element name="payroll" type="xs:double"/>
@@ -37,6 +30,13 @@
                 </xs:complexType>
             </xs:element>
         </xs:sequence>
+        <xs:attribute name="tariffName" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="\w+.\w+"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
     </xs:complexType>
     <xs:complexType name="RoamingTariff">
         <xs:complexContent>

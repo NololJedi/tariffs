@@ -5,7 +5,6 @@ import by.epam.tariffs.entities.Operator;
 import by.epam.tariffs.entities.Parameters;
 
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 import java.util.Objects;
 
 @XmlRootElement(name = "RoamingTariff")
@@ -15,6 +14,10 @@ public class RoamingTariff extends AbstractTariff {
     private Double internationalCallPerMinutePrice;
 
     public RoamingTariff() {
+    }
+
+    public RoamingTariff(AbstractTariff abstractTariff){
+        super(abstractTariff);
     }
 
     public RoamingTariff(String tariffName, Operator operator, CallPrices callPrices, Double payroll, Double smsPrice,

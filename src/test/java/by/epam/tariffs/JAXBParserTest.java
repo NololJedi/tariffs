@@ -8,6 +8,7 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import static by.epam.tariffs.DataForTests.INCORRECT_FILE_PATH;
 import static by.epam.tariffs.DataForTests.INCORRECT_TARIFF_TYPE;
 import static by.epam.tariffs.DataForTests.VALID_DATA_FILE_PATH;
 
@@ -40,8 +41,7 @@ public class JAXBParserTest {
 
     @Test(expected = IncorrectFileException.class)
     public void shouldParsingCauseIncorrectFileException() throws IncorrectFileException, XMLParserException {
-        String incorrectFilePath = "./src/test/resources/data5.xml";
-        jaxbParser.parseTariffsFromFile(incorrectFilePath);
+        jaxbParser.parseTariffsFromFile(INCORRECT_FILE_PATH);
     }
 
 }

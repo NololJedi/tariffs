@@ -12,6 +12,7 @@ public class DataForTests {
 
     public static final String VALID_DATA_FILE_PATH = "./src/test/resources/data.xml";
     public static final String INCORRECT_TARIFF_TYPE = "./src/test/resources/incorrect_tariff_type.xml";
+    public static final String INCORRECT_FILE_PATH = "./src/test/resources/data5.xml";
 
     public static Tariffs getTariffs() {
         CallPrices callPrices = new CallPrices(2.2, 3.3, 4.4);
@@ -26,31 +27,31 @@ public class DataForTests {
 
         parameters = new Parameters(true, Tariffication.PER_MINUTES, 3.3);
         callPrices = new CallPrices(6.2, 10.5, 4.4);
-        RoamingTariff roamingTariff2 = new RoamingTariff("Velcom-Roaming", Operator.VELCOM, callPrices,
+        RoamingTariff roamingTariffNumberTwo = new RoamingTariff("Velcom-Roaming", Operator.VELCOM, callPrices,
                 20.0, 2.0, parameters, false, 3.2);
 
         parameters = new Parameters(false, Tariffication.PER_MINUTES, 3.3);
         callPrices = new CallPrices(2.2, 3.3, 4.4);
-        InternetForMobileTariff internetForMobileTariff1 = new InternetForMobileTariff("Life3000", Operator.LIFE, callPrices,
+        InternetForMobileTariff internetForMobileTariffNumberTwo = new InternetForMobileTariff("Life3000", Operator.LIFE, callPrices,
                 10.0, 1.0, parameters, 3000, 0.1);
 
         parameters = new Parameters(true, Tariffication.PER_SECONDS, 7.6);
         callPrices = new CallPrices(12.2, 13.3, 12.4);
-        RoamingTariff roamingTariff1 = new RoamingTariff("MTS-Roaming", Operator.MTS, callPrices, 30.0, 0.0,
+        RoamingTariff roamingTariffNumberThree = new RoamingTariff("MTS-Roaming", Operator.MTS, callPrices, 30.0, 0.0,
                 parameters, true, 3.8);
 
         parameters = new Parameters(true, Tariffication.PER_SECONDS, 3.3);
         callPrices = new CallPrices(2.0, 3.0, 4.0);
-        InternetForMobileTariff internetForMobileTariff2 = new InternetForMobileTariff("Velcom-Business",
+        InternetForMobileTariff internetForMobileTariffNumberThree = new InternetForMobileTariff("Velcom-Business",
                 Operator.VELCOM, callPrices, 17.0, 0.0, parameters, 5000, 0.1);
 
         List<AbstractTariff> listOfTariffs = new ArrayList<>();
         listOfTariffs.add(roamingTariff);
+        listOfTariffs.add(roamingTariffNumberThree);
+        listOfTariffs.add(roamingTariffNumberTwo);
+        listOfTariffs.add(internetForMobileTariffNumberTwo);
         listOfTariffs.add(internetForMobileTariff);
-        listOfTariffs.add(roamingTariff2);
-        listOfTariffs.add(internetForMobileTariff1);
-        listOfTariffs.add(roamingTariff1);
-        listOfTariffs.add(internetForMobileTariff2);
+        listOfTariffs.add(internetForMobileTariffNumberThree);
 
         Tariffs tariffs = new Tariffs(listOfTariffs);
 

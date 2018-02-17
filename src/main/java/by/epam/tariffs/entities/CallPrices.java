@@ -68,15 +68,15 @@ public class CallPrices {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(inComingCallPerMinutePrice, outComingCallPerMinutePrice, cityLineCallPerMinutePrice);
     }
 
     @Override
     public String toString() {
-        String result = String.format(" Same operator - %.2f. Different operator - %.2f. City line - %.2f",
-                inComingCallPerMinutePrice, outComingCallPerMinutePrice, cityLineCallPerMinutePrice);
-
-        return result;
+        return "CallPrices{" +
+                "inComingCallPerMinutePrice=" + inComingCallPerMinutePrice +
+                ", outComingCallPerMinutePrice=" + outComingCallPerMinutePrice +
+                ", cityLineCallPerMinutePrice=" + cityLineCallPerMinutePrice +
+                '}';
     }
 }

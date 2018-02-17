@@ -56,7 +56,7 @@ public class DOMParser {
 
             return tariffs;
         } catch (ParserConfigurationException | SAXException exception) {
-            throw new XMLParserException(exception);
+            throw new XMLParserException("Parsing failed.", exception);
         } catch (IOException e) {
             throw new IncorrectFileException(e);
         }

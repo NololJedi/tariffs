@@ -16,7 +16,7 @@ public class InternetForMobileTariff extends AbstractTariff {
     public InternetForMobileTariff() {
     }
 
-    public InternetForMobileTariff(AbstractTariff abstractTariff){
+    public InternetForMobileTariff(AbstractTariff abstractTariff) {
         super(abstractTariff);
     }
 
@@ -61,15 +61,14 @@ public class InternetForMobileTariff extends AbstractTariff {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(super.hashCode(), megaBytesCount, megaBytePrice);
     }
 
     @Override
     public String toString() {
-        String result = String.format("Internet for mobile tariff : %s, megabytes - %d, one megabyte price - %.2f.",
-                super.toString(), megaBytesCount, megaBytePrice);
-
-        return result;
+        return "InternetForMobileTariff{" +
+                "megaBytesCount=" + megaBytesCount +
+                ", megaBytePrice=" + megaBytePrice +
+                '}';
     }
 }

@@ -65,15 +65,15 @@ public class Parameters {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(isFavoriteNumberAvailable, tariffication, connectionPrice);
     }
 
     @Override
     public String toString() {
-        String result = String.format(" favorite number included - %s, tariffication - %s, connection price - %.2f",
-                isFavoriteNumberAvailable, tariffication, connectionPrice);
-
-        return result;
+        return "Parameters{" +
+                "isFavoriteNumberAvailable=" + isFavoriteNumberAvailable +
+                ", tariffication=" + tariffication +
+                ", connectionPrice=" + connectionPrice +
+                '}';
     }
 }

@@ -16,7 +16,7 @@ public class RoamingTariff extends AbstractTariff {
     public RoamingTariff() {
     }
 
-    public RoamingTariff(AbstractTariff abstractTariff){
+    public RoamingTariff(AbstractTariff abstractTariff) {
         super(abstractTariff);
     }
 
@@ -61,15 +61,14 @@ public class RoamingTariff extends AbstractTariff {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(super.hashCode(), isInternetAvailable, internationalCallPerMinutePrice);
     }
 
     @Override
     public String toString() {
-        String result = String.format("Roaming tariff : %s, internet included - %s, international call price - %.2f.",
-                super.toString(), isInternetAvailable, internationalCallPerMinutePrice);
-
-        return result;
+        return "RoamingTariff{" +
+                "isInternetAvailable=" + isInternetAvailable +
+                ", internationalCallPerMinutePrice=" + internationalCallPerMinutePrice +
+                '}';
     }
 }

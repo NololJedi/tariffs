@@ -57,28 +57,18 @@ public class Tariffs {
             return false;
         }
 
-        for (int listIndex = 0; listIndex < currentListSize; listIndex++) {
-            if (!listOfTariffs.contains(thatTariffsList.get(listIndex))) {
-                return false;
-            }
-        }
-
-        return true;
+        return listOfTariffs.equals(thatTariffsList);
     }
 
     @Override
     public int hashCode() {
-
         return Objects.hash(listOfTariffs);
     }
 
     @Override
     public String toString() {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (AbstractTariff tariff : listOfTariffs) {
-            stringBuilder.append(tariff.toString() + "\n");
-        }
-
-        return stringBuilder.toString();
+        return "Tariffs{" +
+                "listOfTariffs=" + listOfTariffs +
+                '}';
     }
 }

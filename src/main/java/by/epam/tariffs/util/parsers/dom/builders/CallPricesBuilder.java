@@ -1,13 +1,14 @@
 package by.epam.tariffs.util.parsers.dom.builders;
 
 import by.epam.tariffs.entities.CallPrices;
+import by.epam.tariffs.util.parsers.dom.ValueInjector;
 import org.w3c.dom.Element;
 
 public class CallPricesBuilder {
 
-    private static final String INCOMING_CALL_VALUE_NAME = "inComingCallPerMinutePrice";
-    private static final String OUTCOMING_CALL_VALUE_NAME = "outComingCallPerMinutePrice";
-    private static final String CITY_LINES_CALL_VALUE_NAME = "cityLineCallPerMinutePrice";
+    private static final String IN_COMING_CALL_ELEMENT_NAME = "inComingCallPerMinutePrice";
+    private static final String OUT_COMING_CALL_ELEMENT_NAME = "outComingCallPerMinutePrice";
+    private static final String CITY_LINES_CALL_ELEMENT_NAME = "cityLineCallPerMinutePrice";
 
     public CallPrices buildCallPrices(Element element) {
         if (element == null) {
@@ -16,14 +17,9 @@ public class CallPricesBuilder {
 
         CallPrices callPrices = new CallPrices();
 
-        String inComingCallPerMinutePriceValue = element.getAttribute(INCOMING_CALL_VALUE_NAME);
-        Double inComingCallPerMinutePrice = Double.parseDouble(inComingCallPerMinutePriceValue);
-
-        String outComingCallPerMinutePriceValue = element.getAttribute(OUTCOMING_CALL_VALUE_NAME);
-        Double outComingCallPerMinutePrice = Double.parseDouble(outComingCallPerMinutePriceValue);
-
-        String cityLineCallPerMinutePriceValue = element.getAttribute(CITY_LINES_CALL_VALUE_NAME);
-        Double cityLineCallPerMinutePrice = Double.parseDouble(cityLineCallPerMinutePriceValue);
+        Double inComingCallPerMinutePrice = ValueInjector.getDoubleValueFromElement(element, IN_COMING_CALL_ELEMENT_NAME);
+        Double outComingCallPerMinutePrice = ValueInjector.getDoubleValueFromElement(element, OUT_COMING_CALL_ELEMENT_NAME);
+        Double cityLineCallPerMinutePrice = ValueInjector.getDoubleValueFromElement(element, CITY_LINES_CALL_ELEMENT_NAME);
 
         callPrices.setInComingCallPerMinutePrice(inComingCallPerMinutePrice);
         callPrices.setOutComingCallPerMinutePrice(outComingCallPerMinutePrice);

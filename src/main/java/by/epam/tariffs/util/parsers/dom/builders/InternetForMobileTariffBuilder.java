@@ -2,13 +2,13 @@ package by.epam.tariffs.util.parsers.dom.builders;
 
 import by.epam.tariffs.entities.tariff.AbstractTariff;
 import by.epam.tariffs.entities.tariff.InternetForMobileTariff;
-import by.epam.tariffs.util.parsers.dom.ElementValueInjector;
+import by.epam.tariffs.util.parsers.dom.ValueInjector;
 import org.w3c.dom.Element;
 
 public class InternetForMobileTariffBuilder {
 
-    private static final String MEGABYTES_COUNT_VALUE_NAME = "megaBytesCount";
-    private static final String MEGABYTE_PRICE_VALUE_NAME = "megaBytePrice";
+    private static final String MEGABYTES_COUNT_ELEMENT_NAME = "megaBytesCount";
+    private static final String MEGABYTE_PRICE_ELEMENT_NAME = "megaBytePrice";
 
     public InternetForMobileTariff buildInternetForMobileTariff(Element element) {
         AbstractTariffBuilder abstractTariffBuilder = new AbstractTariffBuilder();
@@ -16,11 +16,8 @@ public class InternetForMobileTariffBuilder {
 
         InternetForMobileTariff internetForMobileTariff = new InternetForMobileTariff(abstractTariff);
 
-        String megaBytesCountValue = ElementValueInjector.injectValueFromElement(element, MEGABYTES_COUNT_VALUE_NAME);
-        Integer megaBytesCount = Integer.parseInt(megaBytesCountValue);
-
-        String megaBytePriceValue = ElementValueInjector.injectValueFromElement(element, MEGABYTE_PRICE_VALUE_NAME);
-        Double megaBytePrice = Double.parseDouble(megaBytePriceValue);
+        Integer megaBytesCount = ValueInjector.getIntegerValueFromElement(element, MEGABYTES_COUNT_ELEMENT_NAME);
+        Double megaBytePrice = ValueInjector.getDoubleValueFromElement(element, MEGABYTE_PRICE_ELEMENT_NAME);
 
         internetForMobileTariff.setMegaBytesCount(megaBytesCount);
         internetForMobileTariff.setMegaBytePrice(megaBytePrice);

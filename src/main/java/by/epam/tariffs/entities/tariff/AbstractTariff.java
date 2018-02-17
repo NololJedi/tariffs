@@ -101,26 +101,45 @@ public abstract class AbstractTariff {
         if (object == null || getClass() != object.getClass()) {
             return false;
         }
+
         AbstractTariff that = (AbstractTariff) object;
-        return Objects.equals(tariffName, that.tariffName) &&
-                operator == that.operator &&
-                Objects.equals(callPrices, that.callPrices) &&
-                Objects.equals(payroll, that.payroll) &&
-                Objects.equals(smsPrice, that.smsPrice) &&
-                Objects.equals(parameters, that.parameters);
+
+        if (!tariffName.equals(that.tariffName)) {
+            return false;
+        }
+        if (operator != that.operator) {
+            return false;
+        }
+        if (!callPrices.equals(that.callPrices)) {
+            return false;
+        }
+        if (!payroll.equals(that.payroll)) {
+            return false;
+        }
+        if (!smsPrice.equals(that.smsPrice)) {
+            return false;
+        }
+        if (!parameters.equals(that.parameters)) {
+            return false;
+        }
+
+        return true;
     }
 
     @Override
     public int hashCode() {
-
         return Objects.hash(tariffName, operator, callPrices, payroll, smsPrice, parameters);
     }
 
     @Override
     public String toString() {
-        String result = String.format("name - %s, operator - %s, call prices - %s, payroll - %2f, sms price - %2f, parameters - %s",
-                tariffName, operator, callPrices.toString(), payroll, smsPrice, parameters.toString());
-
-        return result;
+        return "AbstractTariff{" +
+                "tariffName='" + tariffName + '\'' +
+                ", operator=" + operator +
+                ", callPrices=" + callPrices +
+                ", payroll=" + payroll +
+                ", smsPrice=" + smsPrice +
+                ", parameters=" + parameters +
+                '}';
     }
 }

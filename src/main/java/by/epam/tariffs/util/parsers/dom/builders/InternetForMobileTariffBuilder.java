@@ -5,10 +5,10 @@ import by.epam.tariffs.entities.tariff.InternetForMobileTariff;
 import by.epam.tariffs.util.parsers.dom.ValueInjector;
 import org.w3c.dom.Element;
 
-public class InternetForMobileTariffBuilder {
+import static by.epam.tariffs.util.parsers.XmlElementNameConstants.MEGABYTES_COUNT_ELEMENT_NAME;
+import static by.epam.tariffs.util.parsers.XmlElementNameConstants.MEGABYTE_PRICE_ELEMENT_NAME;
 
-    private static final String MEGABYTES_COUNT_ELEMENT_NAME = "megaBytesCount";
-    private static final String MEGABYTE_PRICE_ELEMENT_NAME = "megaBytePrice";
+public class InternetForMobileTariffBuilder {
 
     public InternetForMobileTariff buildInternetForMobileTariff(Element element) {
         AbstractTariffBuilder abstractTariffBuilder = new AbstractTariffBuilder();

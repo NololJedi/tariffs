@@ -4,11 +4,9 @@ import by.epam.tariffs.entities.CallPrices;
 import by.epam.tariffs.util.parsers.dom.ValueInjector;
 import org.w3c.dom.Element;
 
-public class CallPricesBuilder {
+import static by.epam.tariffs.util.parsers.XmlElementNameConstants.*;
 
-    private static final String IN_COMING_CALL_ELEMENT_NAME = "inComingCallPerMinutePrice";
-    private static final String OUT_COMING_CALL_ELEMENT_NAME = "outComingCallPerMinutePrice";
-    private static final String CITY_LINES_CALL_ELEMENT_NAME = "cityLineCallPerMinutePrice";
+public class CallPricesBuilder {
 
     public CallPrices buildCallPrices(Element element) {
         if (element == null) {

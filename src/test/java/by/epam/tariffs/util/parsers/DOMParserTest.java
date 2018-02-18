@@ -1,5 +1,6 @@
-package by.epam.tariffs;
+package by.epam.tariffs.util.parsers;
 
+import by.epam.tariffs.DataForTests;
 import by.epam.tariffs.entities.Tariffs;
 import by.epam.tariffs.exceptions.IncorrectFileException;
 import by.epam.tariffs.exceptions.XMLParserException;
@@ -8,9 +9,7 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static by.epam.tariffs.DataForTests.INCORRECT_FILE_PATH;
-import static by.epam.tariffs.DataForTests.INCORRECT_TARIFF_TYPE;
-import static by.epam.tariffs.DataForTests.VALID_DATA_FILE_PATH;
+import static by.epam.tariffs.DataForTests.*;
 
 public class DOMParserTest {
 
@@ -31,10 +30,10 @@ public class DOMParserTest {
     }
 
     @Test
-    public void shouldParsingFailed() throws IncorrectFileException, XMLParserException {
+    public void shouldParsingBeNotSuccessful() throws IncorrectFileException, XMLParserException {
         Tariffs incorrectTariffs = domParser.parseTariffsFromFile(INCORRECT_TARIFF_TYPE);
 
-        Assert.assertNotEquals(validTariffs,incorrectTariffs);
+        Assert.assertNotEquals(validTariffs, incorrectTariffs);
     }
 
     @Test(expected = IncorrectFileException.class)

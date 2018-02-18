@@ -5,11 +5,9 @@ import by.epam.tariffs.entities.Tariffication;
 import by.epam.tariffs.util.parsers.dom.ValueInjector;
 import org.w3c.dom.Element;
 
-public class ParametersBuilder {
+import static by.epam.tariffs.util.parsers.XmlElementNameConstants.*;
 
-    private static final String FAVORITE_NUMBER_AVAILABLE_ELEMENT_NAME = "isFavoriteNumberAvailable";
-    private static final String TARIFFICATION_ELEMENT_NAME = "tariffication";
-    private static final String CONNECTION_PRICE_ELEMENT_NAME = "connectionPrice";
+public class ParametersBuilder {
 
     public Parameters buildParameters(Element element) {
         if (element == null) {

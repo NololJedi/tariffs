@@ -1,9 +1,10 @@
-package by.epam.tariffs;
+package by.epam.tariffs.util.parsers;
 
+import by.epam.tariffs.DataForTests;
 import by.epam.tariffs.entities.Tariffs;
 import by.epam.tariffs.exceptions.IncorrectFileException;
 import by.epam.tariffs.exceptions.XMLParserException;
-import by.epam.tariffs.util.parsers.JAXBParser;
+import by.epam.tariffs.util.parsers.sax.SAXParser;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -12,36 +13,34 @@ import static by.epam.tariffs.DataForTests.INCORRECT_FILE_PATH;
 import static by.epam.tariffs.DataForTests.INCORRECT_TARIFF_TYPE;
 import static by.epam.tariffs.DataForTests.VALID_DATA_FILE_PATH;
 
-public class JAXBParserTest {
+public class SAXParserTest {
 
     private static Tariffs validTariffs;
-    private static JAXBParser jaxbParser;
+    private static SAXParser saxParser;
 
     @BeforeClass
     public static void setTestingObjects() {
-
         validTariffs = DataForTests.getTariffs();
-        jaxbParser = new JAXBParser();
-
+        saxParser = new SAXParser();
     }
 
     @Test
-    public void shouldJAXBParsingBeSuccessful() throws IncorrectFileException, XMLParserException {
-        Tariffs parsedTariffs = jaxbParser.parseTariffsFromFile(VALID_DATA_FILE_PATH);
+    public void shouldParsingBeSuccessful() throws IncorrectFileException, XMLParserException {
+        Tariffs actualTariffs = saxParser.parseTariffsFromFile(VALID_DATA_FILE_PATH);
 
-        Assert.assertEquals(validTariffs, parsedTariffs);
+        Assert.assertEquals(validTariffs, actualTariffs);
     }
 
     @Test
-    public void shouldJAXBParsingBeNotSuccessful() throws IncorrectFileException, XMLParserException {
-        Tariffs incorrectTariffs = jaxbParser.parseTariffsFromFile(INCORRECT_TARIFF_TYPE);
+    public void shouldParsingBeNotSuccessful() throws IncorrectFileException, XMLParserException {
+        Tariffs actualTariffs = saxParser.parseTariffsFromFile(INCORRECT_TARIFF_TYPE);
 
-        Assert.assertNotEquals(validTariffs, incorrectTariffs);
+        Assert.assertNotEquals(validTariffs,actualTariffs);
     }
 
     @Test(expected = IncorrectFileException.class)
     public void shouldParsingCauseIncorrectFileException() throws IncorrectFileException, XMLParserException {
-        jaxbParser.parseTariffsFromFile(INCORRECT_FILE_PATH);
+        saxParser.parseTariffsFromFile(INCORRECT_FILE_PATH);
     }
 
 }

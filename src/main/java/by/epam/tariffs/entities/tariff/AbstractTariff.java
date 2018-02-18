@@ -16,6 +16,7 @@ public abstract class AbstractTariff {
 
     @XmlAttribute(required = true)
     private String tariffName;
+
     private Operator operator;
     private CallPrices callPrices;
     private Double payroll;

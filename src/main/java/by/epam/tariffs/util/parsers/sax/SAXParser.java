@@ -32,7 +32,7 @@ public class SAXParser {
             return tariffs;
 
         } catch (SAXException exception) {
-            throw new XMLParserException("Parsing failed.", exception);
+            throw new XMLParserException("SAX parsing failed.", exception);
         } catch (IOException exception) {
             throw new IncorrectFileException(exception);
         }

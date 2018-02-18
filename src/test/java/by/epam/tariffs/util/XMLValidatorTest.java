@@ -1,4 +1,4 @@
-package by.epam.tariffs;
+package by.epam.tariffs.util;
 
 import by.epam.tariffs.exceptions.IncorrectFileException;
 import by.epam.tariffs.util.XMLValidator;

@@ -5,10 +5,10 @@ import by.epam.tariffs.entities.tariff.RoamingTariff;
 import by.epam.tariffs.util.parsers.dom.ValueInjector;
 import org.w3c.dom.Element;
 
-public class RoamingTariffBuilder {
+import static by.epam.tariffs.util.parsers.XmlElementNameConstants.INTERNATIONAL_CALL_ELEMENT_NAME;
+import static by.epam.tariffs.util.parsers.XmlElementNameConstants.INTERNET_AVAILABLE_ELEMENT_NAME;
 
-    private static final String INTERNET_AVAILABLE_ELEMENT_NAME = "isInternetAvailable";
-    private static final String INTERNATIONAL_CALL_ELEMENT_NAME = "internationalCallPerMinutePrice";
+public class RoamingTariffBuilder {
 
     public RoamingTariff buildRoamingTariff(Element element) {
         AbstractTariffBuilder abstractTariffBuilder = new AbstractTariffBuilder();

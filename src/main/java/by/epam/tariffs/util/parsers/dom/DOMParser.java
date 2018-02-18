@@ -8,6 +8,7 @@ import by.epam.tariffs.exceptions.IncorrectFileException;
 import by.epam.tariffs.exceptions.XMLParserException;
 import by.epam.tariffs.util.parsers.dom.builders.InternetForMobileTariffBuilder;
 import by.epam.tariffs.util.parsers.dom.builders.RoamingTariffBuilder;
+import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -21,15 +22,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static by.epam.tariffs.util.parsers.XmlElementNameConstants.INTERNET_FOR_MOBILE_ELEMENT_NAME;
+import static by.epam.tariffs.util.parsers.XmlElementNameConstants.ROAMING_TARIFF_ELEMENT_NAME;
+
 public class DOMParser {
 
-    private static final String ROAMING_TARIFF_XML_TYPE = "RoamingTariff";
-    private static final String INTERNET_FOR_MOBILE_XML_TYPE = "InternetForMobileTariff";
+    private static final Logger LOGGER = Logger.getLogger(DOMParser.class);
 
     public Tariffs parseTariffsFromFile(String xmlFilePath) throws XMLParserException, IncorrectFileException {
         if (xmlFilePath == null || xmlFilePath.isEmpty()) {
             throw new IllegalArgumentException("Incorrect path for xml file");
         }
+
+        LOGGER.info("Start DOM parsing.");
 
         try {
 
@@ -42,23 +47,25 @@ public class DOMParser {
             Document document = documentBuilder.parse(xmlFile);
 
             Element root = document.getDocumentElement();
-            NodeList roamingTariffsListFromXml = root.getElementsByTagName(ROAMING_TARIFF_XML_TYPE);
-            NodeList internetForMobileTariffsListFromXml = root.getElementsByTagName(INTERNET_FOR_MOBILE_XML_TYPE);
+            NodeList roamingTariffsListFromXml = root.getElementsByTagName(ROAMING_TARIFF_ELEMENT_NAME);
+            NodeList internetForMobileTariffsListFromXml = root.getElementsByTagName(INTERNET_FOR_MOBILE_ELEMENT_NAME);
 
-            List<AbstractTariff> roamingTariffs = ejectTariffsFromNodeList(roamingTariffsListFromXml, ROAMING_TARIFF_XML_TYPE);
+            List<AbstractTariff> roamingTariffs = ejectTariffsFromNodeList(roamingTariffsListFromXml, ROAMING_TARIFF_ELEMENT_NAME);
             List<AbstractTariff> internetForMobileTariffs =
-                    ejectTariffsFromNodeList(internetForMobileTariffsListFromXml, INTERNET_FOR_MOBILE_XML_TYPE);
+                    ejectTariffsFromNodeList(internetForMobileTariffsListFromXml, INTERNET_FOR_MOBILE_ELEMENT_NAME);
 
             listOfTariffs.addAll(roamingTariffs);
             listOfTariffs.addAll(internetForMobileTariffs);
 
             tariffs.setListOfTariffs(listOfTariffs);
 
+            LOGGER.info("DOM parsing was made successfully.");
+
             return tariffs;
         } catch (ParserConfigurationException | SAXException exception) {
-            throw new XMLParserException("Parsing failed.", exception);
-        } catch (IOException e) {
-            throw new IncorrectFileException(e);
+            throw new XMLParserException("DOM parsing failed.", exception);
+        } catch (IOException exception) {
+            throw new IncorrectFileException(exception);
         }
 
     }
@@ -69,14 +76,14 @@ public class DOMParser {
         for (int listIndex = 0; listIndex < nodeList.getLength(); listIndex++) {
             Element tariffElement = (Element) nodeList.item(listIndex);
 
-            if (tariffXmlType.equals(ROAMING_TARIFF_XML_TYPE)) {
+            if (tariffXmlType.equals(ROAMING_TARIFF_ELEMENT_NAME)) {
                 RoamingTariffBuilder roamingTariffBuilder = new RoamingTariffBuilder();
                 RoamingTariff roamingTariff = roamingTariffBuilder.buildRoamingTariff(tariffElement);
 
                 tariffs.add(roamingTariff);
             }
 
-            if (tariffXmlType.equals(INTERNET_FOR_MOBILE_XML_TYPE)) {
+            if (tariffXmlType.equals(INTERNET_FOR_MOBILE_ELEMENT_NAME)) {
                 InternetForMobileTariffBuilder internetForMobileTariffBuilder = new InternetForMobileTariffBuilder();
                 InternetForMobileTariff internetForMobileTariff = internetForMobileTariffBuilder.buildInternetForMobileTariff(tariffElement);
 

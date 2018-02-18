@@ -7,16 +7,10 @@ import by.epam.tariffs.entities.tariff.AbstractTariff;
 import by.epam.tariffs.util.parsers.dom.ValueInjector;
 import org.w3c.dom.Element;
 
+import static by.epam.tariffs.util.parsers.XmlElementNameConstants.*;
 import static by.epam.tariffs.util.parsers.dom.ValueInjector.CURRENT_ELEMENT_INDEX;
 
 public class AbstractTariffBuilder {
-
-    private static final String TARIFF_NAME_ELEMENT_NAME = "tariffName";
-    private static final String PAYROLL_ELEMENT_NAME = "payroll";
-    private static final String SMS_PRICE_ELEMENT_NAME = "smsPrice";
-    private static final String OPERATOR_ELEMENT_NAME = "operator";
-    private static final String CALL_PRICES_ELEMENT_NAME = "callPrices";
-    private static final String PARAMETERS_ELEMENT_NAME = "parameters";
 
     public AbstractTariff buildAbstractTariff(Element element) {
         if (element == null) {

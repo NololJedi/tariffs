@@ -14,7 +14,7 @@ import org.xml.sax.helpers.DefaultHandler;
 import java.util.ArrayList;
 import java.util.List;
 
-import static by.epam.tariffs.util.parsers.XmlElementNameConstants.*;
+import static by.epam.tariffs.util.ValueInjector.*;
 
 public class TariffHandler extends DefaultHandler {
 
@@ -52,6 +52,7 @@ public class TariffHandler extends DefaultHandler {
 
                 String tariffName = attributes.getValue(FIRST_ATTRIBUTE_INDEX);
                 currentTariff.setTariffName(tariffName);
+
                 break;
             }
             case INTERNET_FOR_MOBILE_ELEMENT_NAME: {

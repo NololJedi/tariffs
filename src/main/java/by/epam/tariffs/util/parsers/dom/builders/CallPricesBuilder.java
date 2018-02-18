@@ -1,10 +1,9 @@
 package by.epam.tariffs.util.parsers.dom.builders;
 
 import by.epam.tariffs.entities.CallPrices;
-import by.epam.tariffs.util.parsers.dom.ValueInjector;
 import org.w3c.dom.Element;
 
-import static by.epam.tariffs.util.parsers.XmlElementNameConstants.*;
+import static by.epam.tariffs.util.ValueInjector.*;
 
 public class CallPricesBuilder {
 
@@ -15,9 +14,9 @@ public class CallPricesBuilder {
 
         CallPrices callPrices = new CallPrices();
 
-        Double inComingCallPerMinutePrice = ValueInjector.getDoubleValueFromElement(element, IN_COMING_CALL_ELEMENT_NAME);
-        Double outComingCallPerMinutePrice = ValueInjector.getDoubleValueFromElement(element, OUT_COMING_CALL_ELEMENT_NAME);
-        Double cityLineCallPerMinutePrice = ValueInjector.getDoubleValueFromElement(element, CITY_LINES_CALL_ELEMENT_NAME);
+        Double inComingCallPerMinutePrice = getDoubleValueFromElement(element, IN_COMING_CALL_ELEMENT_NAME);
+        Double outComingCallPerMinutePrice = getDoubleValueFromElement(element, OUT_COMING_CALL_ELEMENT_NAME);
+        Double cityLineCallPerMinutePrice = getDoubleValueFromElement(element, CITY_LINES_CALL_ELEMENT_NAME);
 
         callPrices.setInComingCallPerMinutePrice(inComingCallPerMinutePrice);
         callPrices.setOutComingCallPerMinutePrice(outComingCallPerMinutePrice);

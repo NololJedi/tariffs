@@ -4,11 +4,9 @@ import by.epam.tariffs.entities.CallPrices;
 import by.epam.tariffs.entities.Operator;
 import by.epam.tariffs.entities.Parameters;
 import by.epam.tariffs.entities.tariff.AbstractTariff;
-import by.epam.tariffs.util.parsers.dom.ValueInjector;
 import org.w3c.dom.Element;
 
-import static by.epam.tariffs.util.parsers.XmlElementNameConstants.*;
-import static by.epam.tariffs.util.parsers.dom.ValueInjector.CURRENT_ELEMENT_INDEX;
+import static by.epam.tariffs.util.ValueInjector.*;
 
 public class AbstractTariffBuilder {
 
@@ -18,9 +16,9 @@ public class AbstractTariffBuilder {
         }
 
         String tariffName = element.getAttribute(TARIFF_NAME_ELEMENT_NAME);
-        Double payroll = ValueInjector.getDoubleValueFromElement(element, PAYROLL_ELEMENT_NAME);
-        Double smsPrice = ValueInjector.getDoubleValueFromElement(element, SMS_PRICE_ELEMENT_NAME);
-        Operator operator = (Operator) ValueInjector.getEnumValueFromElement(element, OPERATOR_ELEMENT_NAME, Operator.class);
+        Double payroll = getDoubleValueFromElement(element, PAYROLL_ELEMENT_NAME);
+        Double smsPrice = getDoubleValueFromElement(element, SMS_PRICE_ELEMENT_NAME);
+        Operator operator = (Operator) getEnumValueFromElement(element, OPERATOR_ELEMENT_NAME, Operator.class);
 
         Element callPricesElement = (Element) element.getElementsByTagName(CALL_PRICES_ELEMENT_NAME).item(CURRENT_ELEMENT_INDEX);
         CallPricesBuilder callPricesBuilder = new CallPricesBuilder();

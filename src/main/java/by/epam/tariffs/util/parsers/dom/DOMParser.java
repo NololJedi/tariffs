@@ -6,6 +6,7 @@ import by.epam.tariffs.entities.tariff.InternetForMobileTariff;
 import by.epam.tariffs.entities.tariff.RoamingTariff;
 import by.epam.tariffs.exceptions.IncorrectFileException;
 import by.epam.tariffs.exceptions.XMLParserException;
+import by.epam.tariffs.util.parsers.TariffParser;
 import by.epam.tariffs.util.parsers.dom.builders.InternetForMobileTariffBuilder;
 import by.epam.tariffs.util.parsers.dom.builders.RoamingTariffBuilder;
 import org.apache.log4j.Logger;
@@ -22,10 +23,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static by.epam.tariffs.util.parsers.XmlElementNameConstants.INTERNET_FOR_MOBILE_ELEMENT_NAME;
-import static by.epam.tariffs.util.parsers.XmlElementNameConstants.ROAMING_TARIFF_ELEMENT_NAME;
+import static by.epam.tariffs.util.ValueInjector.INTERNET_FOR_MOBILE_ELEMENT_NAME;
+import static by.epam.tariffs.util.ValueInjector.ROAMING_TARIFF_ELEMENT_NAME;
 
-public class DOMParser {
+public class DOMParser implements TariffParser {
 
     private static final Logger LOGGER = Logger.getLogger(DOMParser.class);
 
@@ -62,6 +63,7 @@ public class DOMParser {
             LOGGER.info("DOM parsing was made successfully.");
 
             return tariffs;
+
         } catch (ParserConfigurationException | SAXException exception) {
             throw new XMLParserException("DOM parsing failed.", exception);
         } catch (IOException exception) {

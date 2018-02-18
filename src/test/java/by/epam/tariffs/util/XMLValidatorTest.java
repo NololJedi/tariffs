@@ -1,7 +1,6 @@
 package by.epam.tariffs.util;
 
 import by.epam.tariffs.exceptions.IncorrectFileException;
-import by.epam.tariffs.util.XMLValidator;
 import com.tngtech.java.junit.dataprovider.DataProvider;
 import com.tngtech.java.junit.dataprovider.DataProviderRunner;
 import com.tngtech.java.junit.dataprovider.UseDataProvider;

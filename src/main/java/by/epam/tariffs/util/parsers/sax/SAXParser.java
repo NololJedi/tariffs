@@ -4,6 +4,7 @@ import by.epam.tariffs.entities.Tariffs;
 import by.epam.tariffs.entities.tariff.AbstractTariff;
 import by.epam.tariffs.exceptions.IncorrectFileException;
 import by.epam.tariffs.exceptions.XMLParserException;
+import by.epam.tariffs.util.parsers.TariffParser;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
@@ -11,7 +12,7 @@ import org.xml.sax.helpers.XMLReaderFactory;
 import java.io.IOException;
 import java.util.List;
 
-public class SAXParser {
+public class SAXParser implements TariffParser {
 
     public Tariffs parseTariffsFromFile(String xmlFilePath) throws XMLParserException, IncorrectFileException {
         if (xmlFilePath == null || xmlFilePath.isEmpty()) {
@@ -19,13 +20,12 @@ public class SAXParser {
         }
 
         try {
-
-            Tariffs tariffs = new Tariffs();
             TariffHandler tariffHandler = new TariffHandler();
             XMLReader reader = XMLReaderFactory.createXMLReader();
             reader.setContentHandler(tariffHandler);
             reader.parse(xmlFilePath);
 
+            Tariffs tariffs = new Tariffs();
             List<AbstractTariff> listOfTariffs = tariffHandler.getListOfTariffs();
             tariffs.setListOfTariffs(listOfTariffs);
 

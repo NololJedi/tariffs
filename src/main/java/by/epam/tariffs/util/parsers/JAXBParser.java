@@ -11,7 +11,7 @@ import javax.xml.bind.Unmarshaller;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
-public class JAXBParser {
+public class JAXBParser implements TariffParser {
 
     private static final Logger LOGGER = Logger.getLogger(JAXBParser.class);
 

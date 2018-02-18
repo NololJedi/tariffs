@@ -3,6 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="bc842028-5c1f-48f7-9e79-efb8b1141fd3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/logs/log.txt" afterPath="$PROJECT_DIR$/logs/log.txt" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/JAXBParser.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/JAXBParser.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/XmlElementNameConstants.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/DOMParser.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/DOMParser.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/ValueInjector.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/ValueInjector.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/AbstractTariffBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/AbstractTariffBuilder.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/CallPricesBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/CallPricesBuilder.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/InternetForMobileTariffBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/InternetForMobileTariffBuilder.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/ParametersBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/ParametersBuilder.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/RoamingTariffBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/RoamingTariffBuilder.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/SAXParser.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/SAXParser.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/TariffHandler.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/TariffHandler.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/stax/StAXParser.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/StAXParser.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/XMLValidatorTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/XMLValidatorTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/JAXBParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/JAXBParserTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/SAXParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/SAXParserTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/StAXParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/StAXParserTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,61 +31,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StAXParser.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/stax/StAXParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="53" column="34" lean-forward="true" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#readCallPricesFromXml#0;class#StAXParser#0" expanded="false" />
-                <element signature="method#readParametersFromXml#0;class#StAXParser#0" expanded="false" />
-                <element signature="method#getValueFromXml#0;class#StAXParser#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StAXParserTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/StAXParserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#setTestingObjects#0;class#StAXParserTest#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DOMParserTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/DOMParserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-              <folding>
-                <element signature="method#setTestingObjects#0;class#DOMParserTest#0" expanded="false" />
-                <element signature="method#shouldParsingBeSuccessful#0;class#DOMParserTest#0" expanded="false" />
-                <element signature="method#shouldParsingBeNotSuccessful#0;class#DOMParserTest#0" expanded="false" />
-                <element signature="method#shouldParsingCauseIncorrectFileException#0;class#DOMParserTest#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/data.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,14 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/tariff/InternetForMobileTarrif.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/tariff/RoamingTarrif.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/Operator.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/schema.xsd" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/exceptions/XMLValidationException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/exceptions/IncorrectFileException.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/incorrect_attributes.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/incorrect_attribute_name" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/exceptions/XMLParserException.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/XMLValidator.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/tariffs/TariffsData.java" />
@@ -112,7 +67,6 @@
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/InternetForMobileBuilder.java" />
         <option value="$PROJECT_DIR$/src/test/resources/data.xml" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/ElementValueInjector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/ValueInjector.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/tariff/RoamingTariff.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/tariff/InternetForMobileTariff.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/CallPrices.java" />
@@ -122,24 +76,33 @@
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/TariffElementName.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/XMLParserConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/XmlElementNameConstatns.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/RoamingTariffBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/ParametersBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/InternetForMobileTariffBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/CallPricesBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/AbstractTariffBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/XmlElementNameConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/tariff/AbstractTariff.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/TariffHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/JAXBParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/SAXParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/DOMParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/tariffs/DOMParserTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/tariffs/SAXParserTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/tariffs/JAXBParserTest.java" />
-        <option value="$PROJECT_DIR$/logs/log.txt" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/stax/STAXParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/ParserFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/TariffParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/StAXParserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/JAXBParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/stax/StAXParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/ParserFactoy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/ParserType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/ParserFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/ParserFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/ValueInjector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/ValueInjector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/StAXParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/SAXParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/TariffHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/DOMParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/AbstractTariffBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/CallPricesBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/InternetForMobileTariffBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/ParametersBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/RoamingTariffBuilder.java" />
+        <option value="$PROJECT_DIR$/logs/log.txt" />
       </list>
     </option>
   </component>
@@ -189,88 +152,6 @@
               <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
               <item name="tariffs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="parsers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -310,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StAXParserTest">
+  <component name="RunManager" selected="JUnit.All in tariffs">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -355,7 +236,7 @@
     <configuration name="SAXParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="by.epam.tariffs.util.parsers.*" />
+          <option name="PATTERN" value="by.epam.tariffs.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -380,7 +261,7 @@
     <configuration name="SAXParserTest.shouldParsingBeSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="by.epam.tariffs.util.parsers.*" />
+          <option name="PATTERN" value="by.epam.tariffs.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -405,7 +286,7 @@
     <configuration name="StAXParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="by.epam.tariffs.util.parsers.*" />
+          <option name="PATTERN" value="by.epam.tariffs.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -430,7 +311,7 @@
     <configuration name="StAXParserTest.shouldParsingBeSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="by.epam.tariffs.util.parsers.*" />
+          <option name="PATTERN" value="by.epam.tariffs.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -521,9 +402,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.StAXParserTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.StAXParserTest.shouldParsingBeSuccessful" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.All in tariffs" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in tariffs" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.StAXParserTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.StAXParserTest.shouldParsingBeSuccessful" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.SAXParserTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.SAXParserTest.shouldParsingBeSuccessful" />
       </list>
@@ -552,7 +433,7 @@
       <workItem from="1518627747864" duration="4247000" />
       <workItem from="1518715513915" duration="7875000" />
       <workItem from="1518889977567" duration="4036000" />
-      <workItem from="1518941168372" duration="21378000" />
+      <workItem from="1518941168372" duration="25958000" />
     </task>
     <task id="LOCAL-00001" summary="Continue. Entities finished. XML-file finished.">
       <created>1518456875015</created>
@@ -610,24 +491,31 @@
       <option name="project" value="LOCAL" />
       <updated>1518968102866</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Continue. StAXParser finished. Refactoring.">
+      <created>1518968119728</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1518968119728</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StAXParserTest - 2018.02.18 at 18h 09m 38s.xml">
-      <configuration name="StAXParserTest" configurationId="JUnit" />
+    <history-entry file="All_in_tariffs - 2018.02.18 at 18h 50m 49s.xml">
+      <configuration name="All in tariffs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StAXParserTest - 2018.02.18 at 18h 09m 52s.xml">
-      <configuration name="StAXParserTest" configurationId="JUnit" />
+    <history-entry file="All_in_tariffs - 2018.02.18 at 19h 44m 52s.xml">
+      <configuration name="All in tariffs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StAXParserTest - 2018.02.18 at 18h 13m 15s.xml">
-      <configuration name="StAXParserTest" configurationId="JUnit" />
+    <history-entry file="All_in_tariffs - 2018.02.18 at 19h 48m 56s.xml">
+      <configuration name="All in tariffs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StAXParserTest - 2018.02.18 at 18h 16m 03s.xml">
-      <configuration name="StAXParserTest" configurationId="JUnit" />
+    <history-entry file="All_in_tariffs - 2018.02.18 at 20h 02m 40s.xml">
+      <configuration name="All in tariffs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StAXParserTest - 2018.02.18 at 18h 26m 00s.xml">
-      <configuration name="StAXParserTest" configurationId="JUnit" />
+    <history-entry file="All_in_tariffs - 2018.02.18 at 20h 06m 00s.xml">
+      <configuration name="All in tariffs" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StAXParserTest - 2018.02.18 at 18h 28m 34s.xml">
       <configuration name="StAXParserTest" configurationId="JUnit" />
@@ -646,11 +534,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58106000" />
+    <option name="totallyTimeSpent" value="62686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -660,11 +547,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32440946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35905513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -699,85 +586,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/stax/StAXParser.java</url>
-          <line>109</line>
-          <properties class="by.epam.tariffs.util.parsers.stax.StAXParser" method="readRoamingTariffFromXml">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/stax/StAXParser.java</url>
-          <line>146</line>
-          <properties class="by.epam.tariffs.util.parsers.stax.StAXParser" method="readAbstractTariffFromXml">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/stax/StAXParser.java</url>
-          <line>113</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/stax/StAXParser.java</url>
-          <line>118</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/stax/StAXParser.java</url>
-          <line>120</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/stax/StAXParser.java</url>
-          <line>135</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="46" />
+      <option name="time" value="47" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/UnlimitedCalls.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/tariff/Tariff.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/XSD Introduction.url" />
     <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/exceptions/XMLValidationException.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/exceptions/IncorrectFileException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding>
-            <element signature="method#IncorrectFileException#0;class#IncorrectFileException#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/exceptions/XMLParserException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding>
-            <element signature="method#XMLParserException#0;class#XMLParserException#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -824,9 +638,9 @@
           <folding>
             <element signature="method#incorrectInputParameters#0;class#XMLValidatorTest#0" expanded="false" />
             <element signature="method#shouldValidationBeSuccessful#0;class#XMLValidatorTest#0" expanded="false" />
-            <element signature="e#2189#2194#0" expanded="false" />
+            <element signature="e#2147#2152#0" expanded="false" />
             <element signature="method#shouldValidationBeNotSuccessful#0;class#XMLValidatorTest#0" expanded="false" />
-            <element signature="e#2494#2542#0" expanded="false" />
+            <element signature="e#2452#2500#0" expanded="false" />
             <element signature="method#shouldValidationCauseIllegalArgumentException#0;class#XMLValidatorTest#0" expanded="false" />
             <element signature="method#shouldValidationCauseIncorrectFileException#0;class#XMLValidatorTest#0" expanded="false" />
           </folding>
@@ -879,138 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/ValueInjector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-          <folding>
-            <element signature="method#injectValueFromElement#0;class#ValueInjector#0" expanded="false" />
-            <element signature="method#getDoubleValueFromElement#0;class#ValueInjector#0" expanded="false" />
-            <element signature="method#getIntegerValueFromElement#0;class#ValueInjector#0" expanded="false" />
-            <element signature="method#getBooleanValueFromElement#0;class#ValueInjector#0" expanded="false" />
-            <element signature="method#getEnumValueFromElement#0;class#ValueInjector#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/ParametersBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="6" column="69" lean-forward="false" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/RoamingTariffBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="54" lean-forward="true" selection-start-line="4" selection-start-column="54" selection-end-line="5" selection-end-column="27" />
-          <folding>
-            <element signature="method#buildRoamingTariff#0;class#RoamingTariffBuilder#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/InternetForMobileTariffBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="method#buildInternetForMobileTariff#0;class#InternetForMobileTariffBuilder#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/AbstractTariffBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
-          <folding>
-            <element signature="method#buildAbstractTariff#0;class#AbstractTariffBuilder#0" expanded="false" />
-            <element signature="class#1723:1751" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/XMLValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="111" lean-forward="false" selection-start-line="19" selection-start-column="111" selection-end-line="19" selection-end-column="111" />
-          <folding>
-            <element signature="method#validateXMLFIle#0;class#XMLValidator#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/tariff/RoamingTariff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-          <folding>
-            <element signature="method#RoamingTariff#0;class#RoamingTariff#0" expanded="false" />
-            <element signature="method#RoamingTariff#2;class#RoamingTariff#0" expanded="false" />
-            <element signature="method#setInternationalCallPerMinutePrice#0;class#RoamingTariff#0" expanded="false" />
-            <element signature="method#equals#0;class#RoamingTariff#0" expanded="false" />
-            <element signature="method#hashCode#0;class#RoamingTariff#0" expanded="false" />
-            <element signature="method#toString#0;class#RoamingTariff#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/tariff/AbstractTariff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <element signature="method#AbstractTariff#0;class#AbstractTariff#0" expanded="false" />
-            <element signature="method#AbstractTariff#1;class#AbstractTariff#0" expanded="false" />
-            <element signature="method#AbstractTariff#2;class#AbstractTariff#0" expanded="false" />
-            <element signature="method#equals#0;class#AbstractTariff#0" expanded="false" />
-            <element signature="method#toString#0;class#AbstractTariff#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/Parameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="66" column="25" lean-forward="false" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
-          <folding>
-            <element signature="method#Parameters#0;class#Parameters#0" expanded="false" />
-            <element signature="method#Parameters#1;class#Parameters#0" expanded="false" />
-            <element signature="method#setIsFavoriteNumberAvailable#0;class#Parameters#0" expanded="false" />
-            <element signature="method#equals#0;class#Parameters#0" expanded="false" />
-            <element signature="method#toString#0;class#Parameters#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/Tariffication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/XmlElementNameConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/DOMParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding>
-            <element signature="method#ejectTariffsFromNodeList#0;class#DOMParser#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/JAXBParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1036,14 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/javax/xml/stream/XMLStreamConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1272">
@@ -1052,106 +726,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/JAXBParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="27" column="53" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/tariffs/DataForTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="47" column="60" lean-forward="false" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/Tariffs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding>
-            <element signature="e#488#682#0" expanded="false" />
-            <element signature="method#Tariffs#0;class#Tariffs#0" expanded="false" />
-            <element signature="method#equals#0;class#Tariffs#0" expanded="false" />
-            <element signature="method#toString#0;class#Tariffs#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/tariff/InternetForMobileTariff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-          <folding>
-            <element signature="method#InternetForMobileTariff#0;class#InternetForMobileTariff#0" expanded="false" />
-            <element signature="method#InternetForMobileTariff#2;class#InternetForMobileTariff#0" expanded="false" />
-            <element signature="method#equals#0;class#InternetForMobileTariff#0" expanded="false" />
-            <element signature="method#toString#0;class#InternetForMobileTariff#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/SAXParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="110" lean-forward="false" selection-start-line="15" selection-start-column="110" selection-end-line="15" selection-end-column="110" />
-          <folding>
-            <element signature="method#parseTariffsFromFile#0;class#SAXParser#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/TariffHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="105" column="61" lean-forward="false" selection-start-line="105" selection-start-column="61" selection-end-line="105" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#startElement#0;class#TariffHandler#0" expanded="false" />
-            <element signature="method#endElement#0;class#TariffHandler#0" expanded="false" />
-            <element signature="method#characters#0;class#TariffHandler#0" expanded="false" />
-            <element signature="method#buildAbstractTariff#0;class#TariffHandler#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/CallPricesBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/CallPrices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="e#256#293#0" expanded="false" />
-            <element signature="method#CallPrices#0;class#CallPrices#0" expanded="false" />
-            <element signature="method#CallPrices#1;class#CallPrices#0" expanded="false" />
-            <element signature="method#setInComingCallPerMinutePrice#0;class#CallPrices#0" expanded="false" />
-            <element signature="method#setOutComingCallPerMinutePrice#0;class#CallPrices#0" expanded="false" />
-            <element signature="method#setCityLineCallPerMinutePrice#0;class#CallPrices#0" expanded="false" />
-            <element signature="method#equals#0;class#CallPrices#0" expanded="false" />
-            <element signature="method#hashCode#0;class#CallPrices#0" expanded="false" />
-            <element signature="method#toString#0;class#CallPrices#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/Operator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1180,10 +758,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/DOMParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="276">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <element signature="method#setTestingObjects#0;class#DOMParserTest#0" expanded="false" />
             <element signature="method#shouldParsingBeSuccessful#0;class#DOMParserTest#0" expanded="false" />
@@ -1193,34 +779,325 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/data.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/ParserType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="68">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/ParserFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/XmlElementNameConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/tariff/AbstractTariff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="method#AbstractTariff#0;class#AbstractTariff#0" expanded="false" />
+            <element signature="method#AbstractTariff#1;class#AbstractTariff#0" expanded="false" />
+            <element signature="method#AbstractTariff#2;class#AbstractTariff#0" expanded="false" />
+            <element signature="method#equals#0;class#AbstractTariff#0" expanded="false" />
+            <element signature="method#toString#0;class#AbstractTariff#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/tariff/InternetForMobileTariff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+          <folding>
+            <element signature="method#InternetForMobileTariff#0;class#InternetForMobileTariff#0" expanded="false" />
+            <element signature="method#InternetForMobileTariff#2;class#InternetForMobileTariff#0" expanded="false" />
+            <element signature="method#equals#0;class#InternetForMobileTariff#0" expanded="false" />
+            <element signature="method#toString#0;class#InternetForMobileTariff#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/tariff/RoamingTariff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding>
+            <element signature="method#RoamingTariff#0;class#RoamingTariff#0" expanded="false" />
+            <element signature="method#RoamingTariff#2;class#RoamingTariff#0" expanded="false" />
+            <element signature="method#setInternationalCallPerMinutePrice#0;class#RoamingTariff#0" expanded="false" />
+            <element signature="method#equals#0;class#RoamingTariff#0" expanded="false" />
+            <element signature="method#hashCode#0;class#RoamingTariff#0" expanded="false" />
+            <element signature="method#toString#0;class#RoamingTariff#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/CallPrices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="e#256#293#0" expanded="false" />
+            <element signature="method#CallPrices#0;class#CallPrices#0" expanded="false" />
+            <element signature="method#CallPrices#1;class#CallPrices#0" expanded="false" />
+            <element signature="method#setInComingCallPerMinutePrice#0;class#CallPrices#0" expanded="false" />
+            <element signature="method#setOutComingCallPerMinutePrice#0;class#CallPrices#0" expanded="false" />
+            <element signature="method#setCityLineCallPerMinutePrice#0;class#CallPrices#0" expanded="false" />
+            <element signature="method#equals#0;class#CallPrices#0" expanded="false" />
+            <element signature="method#hashCode#0;class#CallPrices#0" expanded="false" />
+            <element signature="method#toString#0;class#CallPrices#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/Parameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="66" column="25" lean-forward="false" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+          <folding>
+            <element signature="method#Parameters#0;class#Parameters#0" expanded="false" />
+            <element signature="method#Parameters#1;class#Parameters#0" expanded="false" />
+            <element signature="method#setIsFavoriteNumberAvailable#0;class#Parameters#0" expanded="false" />
+            <element signature="method#equals#0;class#Parameters#0" expanded="false" />
+            <element signature="method#toString#0;class#Parameters#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/Tariffication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/entities/Tariffs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <element signature="e#488#682#0" expanded="false" />
+            <element signature="method#Tariffs#0;class#Tariffs#0" expanded="false" />
+            <element signature="method#equals#0;class#Tariffs#0" expanded="false" />
+            <element signature="method#toString#0;class#Tariffs#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/exceptions/XMLParserException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding>
+            <element signature="method#XMLParserException#0;class#XMLParserException#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/exceptions/IncorrectFileException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <element signature="method#IncorrectFileException#0;class#IncorrectFileException#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/XMLValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="111" lean-forward="true" selection-start-line="19" selection-start-column="111" selection-end-line="19" selection-end-column="111" />
+          <folding>
+            <element signature="method#validateXMLFIle#0;class#XMLValidator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/TariffParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/ParserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="63" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+          <folding>
+            <element signature="method#getTariffParser#0;class#ParserFactory#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/JAXBParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="method#parseTariffsFromFile#0;class#JAXBParser#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/SAXParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/sax/TariffHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="106" column="61" lean-forward="false" selection-start-line="106" selection-start-column="61" selection-end-line="106" selection-end-column="61" />
+          <folding>
+            <element signature="method#startElement#0;class#TariffHandler#0" expanded="false" />
+            <element signature="method#endElement#0;class#TariffHandler#0" expanded="false" />
+            <element signature="method#characters#0;class#TariffHandler#0" expanded="false" />
+            <element signature="method#buildAbstractTariff#0;class#TariffHandler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/DOMParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="32" column="110" lean-forward="false" selection-start-line="32" selection-start-column="110" selection-end-line="32" selection-end-column="110" />
+          <folding>
+            <element signature="method#parseTariffsFromFile#0;class#DOMParser#0" expanded="false" />
+            <element signature="method#ejectTariffsFromNodeList#0;class#DOMParser#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/AbstractTariffBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="class#1524:1552" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/CallPricesBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/InternetForMobileTariffBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="73" lean-forward="true" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/ParametersBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/dom/builders/RoamingTariffBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/ValueInjector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="84" column="26" lean-forward="false" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+          <folding>
+            <element signature="method#injectValueFromElement#0;class#ValueInjector#0" expanded="false" />
+            <element signature="method#getValueFromXml#0;class#ValueInjector#0" expanded="false" />
+            <element signature="method#getDoubleValueFromElement#0;class#ValueInjector#0" expanded="false" />
+            <element signature="method#getDoubleValueFromElement#1;class#ValueInjector#0" expanded="false" />
+            <element signature="method#getDoubleValueFromElement#2;class#ValueInjector#0" expanded="false" />
+            <element signature="method#getIntegerValueFromElement#0;class#ValueInjector#0" expanded="false" />
+            <element signature="method#getIntegerValueFromElement#1;class#ValueInjector#0" expanded="false" />
+            <element signature="method#getBooleanValueFromElement#0;class#ValueInjector#0" expanded="false" />
+            <element signature="method#getBooleanValueFromElement#1;class#ValueInjector#0" expanded="false" />
+            <element signature="method#getBooleanValueFromElement#2;class#ValueInjector#0" expanded="false" />
+            <element signature="method#getEnumValueFromElement#0;class#ValueInjector#0" expanded="false" />
+            <element signature="method#getEnumValueFromElement#1;class#ValueInjector#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/tariffs/util/parsers/StAXParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#setTestingObjects#0;class#StAXParserTest#0" expanded="false" />
+            <element signature="method#shouldParsingBeSuccessful#0;class#StAXParserTest#0" expanded="false" />
+            <element signature="method#shouldParsingBeNotSuccessful#0;class#StAXParserTest#0" expanded="false" />
+            <element signature="method#shouldParsingCauseIncorrectFileException#0;class#StAXParserTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/stax/StAXParser.java">
+    <entry file="file://$PROJECT_DIR$/logs/log.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="53" column="34" lean-forward="true" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/parsers/StAXParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="256" column="0" lean-forward="true" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#parseTariffsFromFile#0;class#StAXParser#0" expanded="false" />
+            <element signature="method#readInternetForMobileTariffFromXml#0;class#StAXParser#0" expanded="false" />
+            <element signature="method#readRoamingTariffFromXml#0;class#StAXParser#0" expanded="false" />
+            <element signature="method#readAbstractTariffFromXml#0;class#StAXParser#0" expanded="false" />
+            <element signature="class#6171:6199" expanded="false" />
             <element signature="method#readCallPricesFromXml#0;class#StAXParser#0" expanded="false" />
             <element signature="method#readParametersFromXml#0;class#StAXParser#0" expanded="false" />
-            <element signature="method#getValueFromXml#0;class#StAXParser#0" expanded="false" />
           </folding>
         </state>
       </provider>

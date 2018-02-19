@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bc842028-5c1f-48f7-9e79-efb8b1141fd3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/logs/log.txt" afterPath="$PROJECT_DIR$/logs/log.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -127,9 +128,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,12 +162,29 @@
               <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
               <item name="tariffs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tariffs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tariffs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,6 +196,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -450,7 +466,8 @@
       <workItem from="1519052775312" duration="636000" />
       <workItem from="1519055023178" duration="1363000" />
       <workItem from="1519058692360" duration="3308000" />
-      <workItem from="1519070989955" duration="2530000" />
+      <workItem from="1519070989955" duration="2602000" />
+      <workItem from="1519073773087" duration="113000" />
     </task>
     <task id="LOCAL-00001" summary="Continue. Entities finished. XML-file finished.">
       <created>1518456875015</created>
@@ -536,13 +553,17 @@
       <option name="project" value="LOCAL" />
       <updated>1519073348245</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Finished.">
+      <created>1519073577801</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1519073577801</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_tariffs - 2018.02.19 at 23h 26m 45s.xml">
-      <configuration name="All in tariffs" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_tariffs - 2018.02.19 at 23h 32m 08s.xml">
       <configuration name="All in tariffs" configurationId="JUnit" />
     </history-entry>
@@ -553,6 +574,9 @@
       <configuration name="All in tariffs" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_tariffs - 2018.02.19 at 23h 47m 41s.xml">
+      <configuration name="All in tariffs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_tariffs - 2018.02.19 at 23h 58m 04s.xml">
       <configuration name="All in tariffs" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StAXParserTest - 2018.02.18 at 18h 32m 03s.xml">
@@ -572,7 +596,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71774000" />
+    <option name="totallyTimeSpent" value="71959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -585,12 +609,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15433072" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19685039" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24816984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24816984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32755905" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -603,7 +628,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +646,8 @@
     <MESSAGE value="Continue. StAXParser finished. Refactoring." />
     <MESSAGE value="Continue. Finish soon." />
     <MESSAGE value="Continue. Finished." />
-    <option name="LAST_COMMIT_MESSAGE" value="Continue. Finished." />
+    <MESSAGE value="Finished." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -705,14 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding>
-            <element signature="e#236#249#0" expanded="false" />
-            <element signature="method#AbstractTariff#0;class#AbstractTariff#0" expanded="false" />
-            <element signature="method#AbstractTariff#1;class#AbstractTariff#0" expanded="false" />
-            <element signature="method#AbstractTariff#2;class#AbstractTariff#0" expanded="false" />
-            <element signature="method#equals#0;class#AbstractTariff#0" expanded="false" />
-            <element signature="method#toString#0;class#AbstractTariff#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,12 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding>
-            <element signature="method#InternetForMobileTariff#0;class#InternetForMobileTariff#0" expanded="false" />
-            <element signature="method#InternetForMobileTariff#2;class#InternetForMobileTariff#0" expanded="false" />
-            <element signature="method#equals#0;class#InternetForMobileTariff#0" expanded="false" />
-            <element signature="method#toString#0;class#InternetForMobileTariff#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -733,14 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
           <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="method#RoamingTariff#0;class#RoamingTariff#0" expanded="false" />
-            <element signature="method#RoamingTariff#2;class#RoamingTariff#0" expanded="false" />
-            <element signature="method#setInternationalCallPerMinutePrice#0;class#RoamingTariff#0" expanded="false" />
-            <element signature="method#equals#0;class#RoamingTariff#0" expanded="false" />
-            <element signature="method#hashCode#0;class#RoamingTariff#0" expanded="false" />
-            <element signature="method#toString#0;class#RoamingTariff#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,16 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="method#CallPrices#0;class#CallPrices#0" expanded="false" />
-            <element signature="method#CallPrices#1;class#CallPrices#0" expanded="false" />
-            <element signature="method#setInComingCallPerMinutePrice#0;class#CallPrices#0" expanded="false" />
-            <element signature="method#setOutComingCallPerMinutePrice#0;class#CallPrices#0" expanded="false" />
-            <element signature="method#setCityLineCallPerMinutePrice#0;class#CallPrices#0" expanded="false" />
-            <element signature="method#equals#0;class#CallPrices#0" expanded="false" />
-            <element signature="method#hashCode#0;class#CallPrices#0" expanded="false" />
-            <element signature="method#toString#0;class#CallPrices#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,7 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,14 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-28">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#Parameters#0;class#Parameters#0" expanded="false" />
-            <element signature="method#Parameters#1;class#Parameters#0" expanded="false" />
-            <element signature="method#setIsFavoriteNumberAvailable#0;class#Parameters#0" expanded="false" />
-            <element signature="method#equals#0;class#Parameters#0" expanded="false" />
-            <element signature="method#toString#0;class#Parameters#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -788,7 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,12 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="e#422#616#0" expanded="false" />
-            <element signature="method#Tariffs#0;class#Tariffs#0" expanded="false" />
-            <element signature="method#equals#0;class#Tariffs#0" expanded="false" />
-            <element signature="method#toString#0;class#Tariffs#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -809,9 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="method#IncorrectFileException#0;class#IncorrectFileException#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -819,7 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -843,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,7 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,10 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="32" column="110" lean-forward="false" selection-start-line="32" selection-start-column="110" selection-end-line="32" selection-end-column="110" />
-          <folding>
-            <element signature="method#parse#0;class#DOMParser#0" expanded="false" />
-            <element signature="method#ejectTariffsFromNodeList#0;class#DOMParser#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -878,7 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,12 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="106" column="61" lean-forward="false" selection-start-line="106" selection-start-column="61" selection-end-line="106" selection-end-column="61" />
-          <folding>
-            <element signature="method#startElement#0;class#TariffHandler#0" expanded="false" />
-            <element signature="method#endElement#0;class#TariffHandler#0" expanded="false" />
-            <element signature="method#characters#0;class#TariffHandler#0" expanded="false" />
-            <element signature="method#buildAbstractTariff#0;class#TariffHandler#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -899,9 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="method#parse#0;class#JAXBParser#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -909,7 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -917,7 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -925,7 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,20 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="method#injectValueFromElement#0;class#ValueInjector#0" expanded="false" />
-            <element signature="method#getValueFromXml#0;class#ValueInjector#0" expanded="false" />
-            <element signature="method#injectDoubleValueFromElement#0;class#ValueInjector#0" expanded="false" />
-            <element signature="method#injectDoubleValueFromElement#1;class#ValueInjector#0" expanded="false" />
-            <element signature="method#injectDoubleValueFromElement#2;class#ValueInjector#0" expanded="false" />
-            <element signature="method#injectIntegerValueFromElement#0;class#ValueInjector#0" expanded="false" />
-            <element signature="method#injectIntegerValueFromElement#1;class#ValueInjector#0" expanded="false" />
-            <element signature="method#injectBooleanValueFromElement#0;class#ValueInjector#0" expanded="false" />
-            <element signature="method#injectBooleanValueFromElement#1;class#ValueInjector#0" expanded="false" />
-            <element signature="method#injectBooleanValueFromElement#2;class#ValueInjector#0" expanded="false" />
-            <element signature="method#injectEnumValueFromElement#0;class#ValueInjector#0" expanded="false" />
-            <element signature="method#injectEnumValueFromElement#1;class#ValueInjector#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -954,14 +891,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="151" column="103" lean-forward="false" selection-start-line="151" selection-start-column="103" selection-end-line="151" selection-end-column="103" />
-          <folding>
-            <element signature="method#parse#0;class#StAXParser#0" expanded="false" />
-            <element signature="method#readInternetForMobileTariffFromXml#0;class#StAXParser#0" expanded="false" />
-            <element signature="method#readRoamingTariffFromXml#0;class#StAXParser#0" expanded="false" />
-            <element signature="method#readAbstractTariffFromXml#0;class#StAXParser#0" expanded="false" />
-            <element signature="method#readCallPricesFromXml#0;class#StAXParser#0" expanded="false" />
-            <element signature="method#readParametersFromXml#0;class#StAXParser#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/XMLValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -970,16 +906,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/tariffs/util/XMLValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="method#validateXMLFIle#0;class#XMLValidator#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

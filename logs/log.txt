@@ -1,4 +1,4 @@
-2018-02-19 23:47:40 INFO  XMLValidator:41 - XML validation failed.
+2018-02-19 23:58:01 INFO  XMLValidator:41 - XML validation failed.
 org.xml.sax.SAXParseException; systemId: file:///C:/Eugene/Study/Java/epam/tariffs/src/test/resources/incorrect_attribute_name.xml; lineNumber: 3; columnNumber: 49; cvc-pattern-valid: Value '!!!Life-Roaming' is not facet-valid with respect to pattern '\w+.\w+' for type '#AnonType_tariffNameAbstractTariff'.
 	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
 	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
@@ -55,7 +55,7 @@ org.xml.sax.SAXParseException; systemId: file:///C:/Eugene/Study/Java/epam/tarif
 	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
 	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
 	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
-2018-02-19 23:47:40 INFO  XMLValidator:41 - XML validation failed.
+2018-02-19 23:58:01 INFO  XMLValidator:41 - XML validation failed.
 org.xml.sax.SAXParseException; systemId: file:///C:/Eugene/Study/Java/epam/tariffs/src/test/resources/missed_attribute.xml; lineNumber: 7; columnNumber: 19; cvc-complex-type.2.4.a: Invalid content was found starting with element 'smsPrice'. One of '{payroll}' is expected.
 	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
 	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
@@ -110,7 +110,7 @@ org.xml.sax.SAXParseException; systemId: file:///C:/Eugene/Study/Java/epam/tarif
 	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
 	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
 	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
-2018-02-19 23:47:40 INFO  XMLValidator:41 - XML validation failed.
+2018-02-19 23:58:02 INFO  XMLValidator:41 - XML validation failed.
 org.xml.sax.SAXParseException; systemId: file:///C:/Eugene/Study/Java/epam/tariffs/src/test/resources/incorrect_attribute_operator.xml; lineNumber: 4; columnNumber: 37; cvc-enumeration-valid: Value 'MEGAFON' is not facet-valid with respect to enumeration '[MTS, VELCOM, LIFE]'. It must be a value from the enumeration.
 	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
 	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
@@ -167,7 +167,7 @@ org.xml.sax.SAXParseException; systemId: file:///C:/Eugene/Study/Java/epam/tarif
 	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
 	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
 	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
-2018-02-19 23:47:40 INFO  XMLValidator:41 - XML validation failed.
+2018-02-19 23:58:02 INFO  XMLValidator:41 - XML validation failed.
 org.xml.sax.SAXParseException; systemId: file:///C:/Eugene/Study/Java/epam/tariffs/src/test/resources/incorrect_tariff_type.xml; lineNumber: 16; columnNumber: 21; cvc-complex-type.2.4.a: Invalid content was found starting with element 'CitiLineTariff'. One of '{RoamingTariff, InternetForMobileTariff}' is expected.
 	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
 	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
@@ -222,22 +222,22 @@ org.xml.sax.SAXParseException; systemId: file:///C:/Eugene/Study/Java/epam/tarif
 	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
 	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
 	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
-2018-02-19 23:47:40 INFO  DOMParser:38 - Start DOM parsing.
-2018-02-19 23:47:40 INFO  DOMParser:38 - Start DOM parsing.
-2018-02-19 23:47:40 INFO  DOMParser:63 - DOM parsing was made successfully.
-2018-02-19 23:47:40 INFO  DOMParser:38 - Start DOM parsing.
-2018-02-19 23:47:40 INFO  DOMParser:63 - DOM parsing was made successfully.
-2018-02-19 23:47:40 INFO  JAXBParser:23 - Start JAXB parsing.
-2018-02-19 23:47:41 INFO  JAXBParser:23 - Start JAXB parsing.
-2018-02-19 23:47:41 INFO  JAXBParser:31 - JAXB parsing was made successfully.
-2018-02-19 23:47:41 INFO  JAXBParser:23 - Start JAXB parsing.
-2018-02-19 23:47:41 INFO  JAXBParser:31 - JAXB parsing was made successfully.
-2018-02-19 23:47:41 INFO  TariffHandler:37 - Start SAX parsing.
-2018-02-19 23:47:41 INFO  TariffHandler:42 - SAX parsing was made successfully.
-2018-02-19 23:47:41 INFO  TariffHandler:37 - Start SAX parsing.
-2018-02-19 23:47:41 INFO  TariffHandler:42 - SAX parsing was made successfully.
-2018-02-19 23:47:41 INFO  StAXParser:35 - Start StAX parsing.
-2018-02-19 23:47:41 INFO  StAXParser:35 - Start StAX parsing.
-2018-02-19 23:47:41 INFO  StAXParser:66 - StAX parsing was made successfully.
-2018-02-19 23:47:41 INFO  StAXParser:35 - Start StAX parsing.
-2018-02-19 23:47:41 INFO  StAXParser:66 - StAX parsing was made successfully.
+2018-02-19 23:58:02 INFO  DOMParser:38 - Start DOM parsing.
+2018-02-19 23:58:02 INFO  DOMParser:38 - Start DOM parsing.
+2018-02-19 23:58:02 INFO  DOMParser:63 - DOM parsing was made successfully.
+2018-02-19 23:58:02 INFO  DOMParser:38 - Start DOM parsing.
+2018-02-19 23:58:02 INFO  DOMParser:63 - DOM parsing was made successfully.
+2018-02-19 23:58:02 INFO  JAXBParser:23 - Start JAXB parsing.
+2018-02-19 23:58:02 INFO  JAXBParser:23 - Start JAXB parsing.
+2018-02-19 23:58:03 INFO  JAXBParser:31 - JAXB parsing was made successfully.
+2018-02-19 23:58:03 INFO  JAXBParser:23 - Start JAXB parsing.
+2018-02-19 23:58:03 INFO  JAXBParser:31 - JAXB parsing was made successfully.
+2018-02-19 23:58:03 INFO  TariffHandler:37 - Start SAX parsing.
+2018-02-19 23:58:03 INFO  TariffHandler:42 - SAX parsing was made successfully.
+2018-02-19 23:58:03 INFO  TariffHandler:37 - Start SAX parsing.
+2018-02-19 23:58:03 INFO  TariffHandler:42 - SAX parsing was made successfully.
+2018-02-19 23:58:03 INFO  StAXParser:35 - Start StAX parsing.
+2018-02-19 23:58:03 INFO  StAXParser:35 - Start StAX parsing.
+2018-02-19 23:58:03 INFO  StAXParser:66 - StAX parsing was made successfully.
+2018-02-19 23:58:03 INFO  StAXParser:35 - Start StAX parsing.
+2018-02-19 23:58:03 INFO  StAXParser:66 - StAX parsing was made successfully.

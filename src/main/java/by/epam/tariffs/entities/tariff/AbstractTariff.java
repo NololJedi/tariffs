@@ -4,23 +4,25 @@ import by.epam.tariffs.entities.CallPrices;
 import by.epam.tariffs.entities.Operator;
 import by.epam.tariffs.entities.Parameters;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.*;
 import java.util.Objects;
 
 @XmlTransient
 @XmlAccessorType(XmlAccessType.FIELD)
 public abstract class AbstractTariff {
 
-    @XmlAttribute(required = true)
+    @XmlAttribute(name = "tariffName",required = true)
     private String tariffName;
 
+    @XmlElement(name = "operator")
     private Operator operator;
+    @XmlElement(name = "callPrices")
     private CallPrices callPrices;
+    @XmlElement(name = "payroll")
     private Double payroll;
+    @XmlElement(name = "smsPrice")
     private Double smsPrice;
+    @XmlElement(name = "parameters")
     private Parameters parameters;
 
     public AbstractTariff() {

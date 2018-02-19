@@ -1,19 +1,18 @@
 package by.epam.tariffs.entities;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 import java.util.Objects;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "Parameters")
 public class Parameters {
 
-    @XmlAttribute
+    @XmlAttribute(name = "isFavoriteNumberAvailable")
     private Boolean isFavoriteNumberAvailable;
 
+    @XmlElement(name = "tariffication")
     private Tariffication tariffication;
+    @XmlElement(name = "connectionPrice")
     private Double connectionPrice;
 
     public Parameters() {

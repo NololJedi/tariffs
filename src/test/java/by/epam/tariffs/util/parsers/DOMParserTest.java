@@ -4,7 +4,7 @@ import by.epam.tariffs.DataForTests;
 import by.epam.tariffs.entities.Tariffs;
 import by.epam.tariffs.exceptions.IncorrectFileException;
 import by.epam.tariffs.exceptions.XMLParserException;
-import by.epam.tariffs.util.parsers.dom.DOMParser;
+import by.epam.tariffs.parsers.dom.DOMParser;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;

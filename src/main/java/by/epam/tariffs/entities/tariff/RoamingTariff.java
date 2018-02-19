@@ -4,13 +4,16 @@ import by.epam.tariffs.entities.CallPrices;
 import by.epam.tariffs.entities.Operator;
 import by.epam.tariffs.entities.Parameters;
 
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Objects;
 
 @XmlRootElement(name = "RoamingTariff")
 public class RoamingTariff extends AbstractTariff {
 
+    @XmlElement(name = "isInternetAvailable")
     private Boolean isInternetAvailable;
+    @XmlElement(name = "internationalCallPerMinutePrice")
     private Double internationalCallPerMinutePrice;
 
     public RoamingTariff() {

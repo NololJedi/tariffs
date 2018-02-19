@@ -1,4 +1,4 @@
-package by.epam.tariffs.util.parsers;
+package by.epam.tariffs.parsers;
 
 public enum ParserType {
 

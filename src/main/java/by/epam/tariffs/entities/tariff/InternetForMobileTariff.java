@@ -4,13 +4,16 @@ import by.epam.tariffs.entities.CallPrices;
 import by.epam.tariffs.entities.Operator;
 import by.epam.tariffs.entities.Parameters;
 
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Objects;
 
 @XmlRootElement(name = "InternetForMobileTariff")
 public class InternetForMobileTariff extends AbstractTariff {
 
+    @XmlElement(name = "megaBytesCount")
     private Integer megaBytesCount;
+    @XmlElement(name = "megaBytePrice")
     private Double megaBytePrice;
 
     public InternetForMobileTariff() {

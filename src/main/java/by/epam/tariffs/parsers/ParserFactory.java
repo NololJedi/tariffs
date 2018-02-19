@@ -1,11 +1,11 @@
-package by.epam.tariffs.util.parsers;
+package by.epam.tariffs.parsers;
 
-import by.epam.tariffs.util.parsers.dom.DOMParser;
-import by.epam.tariffs.util.parsers.sax.SAXParser;
+import by.epam.tariffs.parsers.sax.SAXParser;
+import by.epam.tariffs.parsers.dom.DOMParser;
 
 public class ParserFactory {
 
-    public TariffParser getTariffParser(ParserType parserType) {
+    public Parser getParser(ParserType parserType) {
 
         switch (parserType) {
             case DOM: {

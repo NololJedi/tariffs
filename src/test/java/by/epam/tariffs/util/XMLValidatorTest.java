@@ -17,7 +17,7 @@ public class XMLValidatorTest {
 
     private static XMLValidator xmlValidator;
 
-    private final static String XSD_SCHEMA_FILE_PATH = "./src/test/resources/schema.xsd";
+    private final static String XSD_SCHEMA_FILE_PATH = "./src/main/resources/schema.xsd";
 
     @BeforeClass
     public static void setXmlValidator() {

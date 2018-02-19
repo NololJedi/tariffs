@@ -1,4 +1,4 @@
-package by.epam.tariffs.util.parsers;
+package by.epam.tariffs.parsers;
 
 import by.epam.tariffs.entities.Tariffs;
 import by.epam.tariffs.exceptions.IncorrectFileException;
@@ -11,7 +11,7 @@ import javax.xml.bind.Unmarshaller;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
-public class JAXBParser implements TariffParser {
+public class JAXBParser implements Parser {
 
     private static final Logger LOGGER = Logger.getLogger(JAXBParser.class);
 
@@ -35,7 +35,7 @@ public class JAXBParser implements TariffParser {
         } catch (JAXBException exception) {
             throw new XMLParserException("JAXB parsing failed.", exception);
         } catch (FileNotFoundException exception) {
-            throw new IncorrectFileException(exception);
+            throw new IncorrectFileException("Something wrong with file.",exception);
         }
 
     }

@@ -1,4 +1,4 @@
-package by.epam.tariffs.util.parsers.sax;
+package by.epam.tariffs.parsers.sax;
 
 import by.epam.tariffs.entities.CallPrices;
 import by.epam.tariffs.entities.Operator;

@@ -1,4 +1,4 @@
-package by.epam.tariffs.util.parsers.dom.builders;
+package by.epam.tariffs.parsers.dom.builders;
 
 import by.epam.tariffs.entities.CallPrices;
 import org.w3c.dom.Element;

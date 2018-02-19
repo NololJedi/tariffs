@@ -1,4 +1,4 @@
-package by.epam.tariffs.util.parsers.dom;
+package by.epam.tariffs.parsers.dom;
 
 import by.epam.tariffs.entities.Tariffs;
 import by.epam.tariffs.entities.tariff.AbstractTariff;
@@ -6,9 +6,9 @@ import by.epam.tariffs.entities.tariff.InternetForMobileTariff;
 import by.epam.tariffs.entities.tariff.RoamingTariff;
 import by.epam.tariffs.exceptions.IncorrectFileException;
 import by.epam.tariffs.exceptions.XMLParserException;
-import by.epam.tariffs.util.parsers.TariffParser;
-import by.epam.tariffs.util.parsers.dom.builders.InternetForMobileTariffBuilder;
-import by.epam.tariffs.util.parsers.dom.builders.RoamingTariffBuilder;
+import by.epam.tariffs.parsers.Parser;
+import by.epam.tariffs.parsers.dom.builders.InternetForMobileTariffBuilder;
+import by.epam.tariffs.parsers.dom.builders.RoamingTariffBuilder;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -26,7 +26,7 @@ import java.util.List;
 import static by.epam.tariffs.util.ValueInjector.INTERNET_FOR_MOBILE_ELEMENT_NAME;
 import static by.epam.tariffs.util.ValueInjector.ROAMING_TARIFF_ELEMENT_NAME;
 
-public class DOMParser implements TariffParser {
+public class DOMParser implements Parser {
 
     private static final Logger LOGGER = Logger.getLogger(DOMParser.class);
 
@@ -67,7 +67,7 @@ public class DOMParser implements TariffParser {
         } catch (ParserConfigurationException | SAXException exception) {
             throw new XMLParserException("DOM parsing failed.", exception);
         } catch (IOException exception) {
-            throw new IncorrectFileException(exception);
+            throw new IncorrectFileException("Something wrong with file.",exception);
         }
 
     }

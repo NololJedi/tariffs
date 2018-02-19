@@ -10,13 +10,11 @@ import java.util.Objects;
 @XmlRootElement
 public class CallPrices {
 
-    @XmlAttribute(required = true)
+    @XmlAttribute(name = "inComingCallPerMinutePrice",required = true)
     private Double inComingCallPerMinutePrice;
-
-    @XmlAttribute
+    @XmlAttribute(name = "outComingCallPerMinutePrice")
     private Double outComingCallPerMinutePrice;
-
-    @XmlAttribute(required = true)
+    @XmlAttribute(name = "cityLineCallPerMinutePrice", required = true)
     private Double cityLineCallPerMinutePrice;
 
     public CallPrices() {

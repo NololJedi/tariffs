@@ -1,4 +1,4 @@
-package by.epam.tariffs.util.parsers;
+package by.epam.tariffs.parsers;
 
 import by.epam.tariffs.entities.*;
 import by.epam.tariffs.entities.tariff.AbstractTariff;
@@ -20,7 +20,7 @@ import java.util.List;
 import static by.epam.tariffs.util.ValueInjector.*;
 
 
-public class StAXParser implements TariffParser {
+public class StAXParser implements Parser {
 
     private static final Logger LOGGER = Logger.getLogger(StAXParser.class);
 
@@ -70,7 +70,7 @@ public class StAXParser implements TariffParser {
         } catch (XMLStreamException exception) {
             throw new XMLParserException("StAX parsing failed.", exception);
         } catch (IOException exception) {
-            throw new IncorrectFileException(exception);
+            throw new IncorrectFileException("Something wrong with file.",exception);
         }
     }
 

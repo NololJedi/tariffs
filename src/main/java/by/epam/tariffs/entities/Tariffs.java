@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Objects;
 
 @XmlRootElement(name = "Tariffs")
-@XmlSeeAlso({RoamingTariff.class, InternetForMobileTariff.class})
 @XmlAccessorType(XmlAccessType.NONE)
 public class Tariffs {
 

@@ -24,7 +24,7 @@ public class StAXParser implements Parser {
 
     private static final Logger LOGGER = Logger.getLogger(StAXParser.class);
 
-    public Tariffs parseTariffsFromFile(String xmlFilePath) throws XMLParserException, IncorrectFileException {
+    public Tariffs parse(String xmlFilePath) throws XMLParserException, IncorrectFileException {
         if (xmlFilePath == null || xmlFilePath.isEmpty()) {
             throw new IllegalArgumentException("Incorrect path for xml file");
         }
@@ -88,13 +88,13 @@ public class StAXParser implements Parser {
 
                 switch (currentElementName) {
                     case MEGABYTES_COUNT_ELEMENT_NAME: {
-                        Integer megaBytesCount = getIntegerValueFromElement(reader);
+                        Integer megaBytesCount = injectIntegerValueFromElement(reader);
                         internetForMobileTariff.setMegaBytesCount(megaBytesCount);
 
                         break;
                     }
                     case MEGABYTE_PRICE_ELEMENT_NAME: {
-                        Double megaBytePrice = getDoubleValueFromElement(reader);
+                        Double megaBytePrice = injectDoubleValueFromElement(reader);
                         internetForMobileTariff.setMegaBytePrice(megaBytePrice);
 
                         break;
@@ -125,13 +125,13 @@ public class StAXParser implements Parser {
 
                 switch (currentElementName) {
                     case INTERNET_AVAILABLE_ELEMENT_NAME: {
-                        Boolean isInternetAvailable = getBooleanValueFromElement(reader);
+                        Boolean isInternetAvailable = injectBooleanValueFromElement(reader);
                         roamingTariff.setIsInternetAvailable(isInternetAvailable);
 
                         break;
                     }
                     case INTERNATIONAL_CALL_ELEMENT_NAME: {
-                        Double internationalCallPerMinutePrice = getDoubleValueFromElement(reader);
+                        Double internationalCallPerMinutePrice = injectDoubleValueFromElement(reader);
                         roamingTariff.setInternationalCallPerMinutePrice(internationalCallPerMinutePrice);
 
                         break;
@@ -165,19 +165,19 @@ public class StAXParser implements Parser {
 
                 switch (currentElementName) {
                     case SMS_PRICE_ELEMENT_NAME: {
-                        Double smsPrice = getDoubleValueFromElement(reader);
+                        Double smsPrice = injectDoubleValueFromElement(reader);
                         abstractTariff.setSmsPrice(smsPrice);
 
                         break;
                     }
                     case PAYROLL_ELEMENT_NAME: {
-                        Double payroll = getDoubleValueFromElement(reader);
+                        Double payroll = injectDoubleValueFromElement(reader);
                         abstractTariff.setPayroll(payroll);
 
                         break;
                     }
                     case OPERATOR_ELEMENT_NAME: {
-                        Operator operator = (Operator) getEnumValueFromElement(reader, Operator.class);
+                        Operator operator = (Operator) injectEnumValueFromElement(reader, Operator.class);
                         abstractTariff.setOperator(operator);
 
                         break;
@@ -205,9 +205,9 @@ public class StAXParser implements Parser {
     private CallPrices readCallPricesFromXml(XMLStreamReader reader) {
         CallPrices callPrices = new CallPrices();
 
-        Double inComingCallPerMinutePrice = getDoubleValueFromElement(reader, IN_COMING_CALL_ELEMENT_NAME);
-        Double outComingCallPerMinutePrice = getDoubleValueFromElement(reader, OUT_COMING_CALL_ELEMENT_NAME);
-        Double cityLineCallPerMinutePrice = getDoubleValueFromElement(reader, CITY_LINES_CALL_ELEMENT_NAME);
+        Double inComingCallPerMinutePrice = injectDoubleValueFromElement(reader, IN_COMING_CALL_ELEMENT_NAME);
+        Double outComingCallPerMinutePrice = injectDoubleValueFromElement(reader, OUT_COMING_CALL_ELEMENT_NAME);
+        Double cityLineCallPerMinutePrice = injectDoubleValueFromElement(reader, CITY_LINES_CALL_ELEMENT_NAME);
 
         callPrices.setInComingCallPerMinutePrice(inComingCallPerMinutePrice);
         callPrices.setOutComingCallPerMinutePrice(outComingCallPerMinutePrice);
@@ -219,7 +219,7 @@ public class StAXParser implements Parser {
     private Parameters readParametersFromXml(XMLStreamReader reader) throws XMLStreamException {
         Parameters parameters = new Parameters();
 
-        Boolean isFavoriteNumberAvailable = getBooleanValueFromElement(reader, FAVORITE_NUMBER_AVAILABLE_ELEMENT_NAME);
+        Boolean isFavoriteNumberAvailable = injectBooleanValueFromElement(reader, FAVORITE_NUMBER_AVAILABLE_ELEMENT_NAME);
         parameters.setIsFavoriteNumberAvailable(isFavoriteNumberAvailable);
 
         String currentElementName;
@@ -231,13 +231,13 @@ public class StAXParser implements Parser {
 
                 switch (currentElementName) {
                     case TARIFFICATION_ELEMENT_NAME: {
-                        Tariffication tariffication = (Tariffication) getEnumValueFromElement(reader, Tariffication.class);
+                        Tariffication tariffication = (Tariffication) injectEnumValueFromElement(reader, Tariffication.class);
                         parameters.setTariffication(tariffication);
 
                         break;
                     }
                     case CONNECTION_PRICE_ELEMENT_NAME: {
-                        Double connectionPrice = getDoubleValueFromElement(reader);
+                        Double connectionPrice = injectDoubleValueFromElement(reader);
                         parameters.setConnectionPrice(connectionPrice);
 
                         break;

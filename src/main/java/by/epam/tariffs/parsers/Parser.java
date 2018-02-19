@@ -6,6 +6,6 @@ import by.epam.tariffs.exceptions.XMLParserException;
 
 public interface Parser {
 
-    Tariffs parseTariffsFromFile(String xmlFilePath) throws XMLParserException, IncorrectFileException;
+    Tariffs parse(String xmlFilePath) throws XMLParserException, IncorrectFileException;
 
 }

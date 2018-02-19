@@ -28,7 +28,8 @@ public abstract class AbstractTariff {
     public AbstractTariff() {
     }
 
-    public AbstractTariff(String tariffName, Operator operator, CallPrices callPrices, Double payroll, Double smsPrice, Parameters parameters) {
+    public AbstractTariff(String tariffName, Operator operator, CallPrices callPrices, Double payroll,
+                          Double smsPrice, Parameters parameters) {
         this.tariffName = tariffName;
         this.operator = operator;
         this.callPrices = callPrices;

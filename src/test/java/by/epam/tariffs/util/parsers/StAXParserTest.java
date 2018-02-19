@@ -24,21 +24,21 @@ public class StAXParserTest {
 
     @Test
     public void shouldParsingBeSuccessful() throws IncorrectFileException, XMLParserException {
-        Tariffs parsedTariffs = stAXParser.parseTariffsFromFile(VALID_DATA_FILE_PATH);
+        Tariffs parsedTariffs = stAXParser.parse(VALID_DATA_FILE_PATH);
 
         Assert.assertEquals(validTariffs, parsedTariffs);
     }
 
     @Test
     public void shouldParsingBeNotSuccessful() throws IncorrectFileException, XMLParserException {
-        Tariffs incorrectTariffs = stAXParser.parseTariffsFromFile(INCORRECT_TARIFF_TYPE);
+        Tariffs incorrectTariffs = stAXParser.parse(INCORRECT_TARIFF_TYPE);
 
         Assert.assertNotEquals(validTariffs, incorrectTariffs);
     }
 
     @Test(expected = IncorrectFileException.class)
     public void shouldParsingCauseIncorrectFileException() throws IncorrectFileException, XMLParserException {
-        stAXParser.parseTariffsFromFile(INCORRECT_FILE_PATH);
+        stAXParser.parse(INCORRECT_FILE_PATH);
     }
 
 }

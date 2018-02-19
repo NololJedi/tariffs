@@ -15,9 +15,9 @@ public class ParametersBuilder {
 
         Parameters parameters = new Parameters();
 
-        Boolean isFavoriteNumberAvailable = getBooleanValueFromElement(element, FAVORITE_NUMBER_AVAILABLE_ELEMENT_NAME);
-        Tariffication tariffication = (Tariffication) getEnumValueFromElement(element, TARIFFICATION_ELEMENT_NAME, Tariffication.class);
-        Double connectionPrice = getDoubleValueFromElement(element, CONNECTION_PRICE_ELEMENT_NAME);
+        Boolean isFavoriteNumberAvailable = injectBooleanValueFromElement(element, FAVORITE_NUMBER_AVAILABLE_ELEMENT_NAME);
+        Tariffication tariffication = (Tariffication) injectEnumValueFromElement(element, TARIFFICATION_ELEMENT_NAME, Tariffication.class);
+        Double connectionPrice = injectDoubleValueFromElement(element, CONNECTION_PRICE_ELEMENT_NAME);
 
         parameters.setConnectionPrice(connectionPrice);
         parameters.setIsFavoriteNumberAvailable(isFavoriteNumberAvailable);

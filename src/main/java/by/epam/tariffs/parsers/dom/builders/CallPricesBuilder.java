@@ -14,9 +14,9 @@ public class CallPricesBuilder {
 
         CallPrices callPrices = new CallPrices();
 
-        Double inComingCallPerMinutePrice = getDoubleValueFromElement(element, IN_COMING_CALL_ELEMENT_NAME);
-        Double outComingCallPerMinutePrice = getDoubleValueFromElement(element, OUT_COMING_CALL_ELEMENT_NAME);
-        Double cityLineCallPerMinutePrice = getDoubleValueFromElement(element, CITY_LINES_CALL_ELEMENT_NAME);
+        Double inComingCallPerMinutePrice = injectDoubleValueFromElement(element, IN_COMING_CALL_ELEMENT_NAME);
+        Double outComingCallPerMinutePrice = injectDoubleValueFromElement(element, OUT_COMING_CALL_ELEMENT_NAME);
+        Double cityLineCallPerMinutePrice = injectDoubleValueFromElement(element, CITY_LINES_CALL_ELEMENT_NAME);
 
         callPrices.setInComingCallPerMinutePrice(inComingCallPerMinutePrice);
         callPrices.setOutComingCallPerMinutePrice(outComingCallPerMinutePrice);

@@ -14,8 +14,8 @@ public class RoamingTariffBuilder {
 
         RoamingTariff roamingTariff = new RoamingTariff(abstractTariff);
 
-        Boolean isInternetAvailable = getBooleanValueFromElement(element, INTERNET_AVAILABLE_ELEMENT_NAME);
-        Double internationalCallPerMinutePrice = getDoubleValueFromElement(element, INTERNATIONAL_CALL_ELEMENT_NAME);
+        Boolean isInternetAvailable = injectBooleanValueFromElement(element, INTERNET_AVAILABLE_ELEMENT_NAME);
+        Double internationalCallPerMinutePrice = injectDoubleValueFromElement(element, INTERNATIONAL_CALL_ELEMENT_NAME);
 
         roamingTariff.setIsInternetAvailable(isInternetAvailable);
         roamingTariff.setInternationalCallPerMinutePrice(internationalCallPerMinutePrice);

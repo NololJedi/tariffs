@@ -14,8 +14,8 @@ public class InternetForMobileTariffBuilder {
 
         InternetForMobileTariff internetForMobileTariff = new InternetForMobileTariff(abstractTariff);
 
-        Integer megaBytesCount = getIntegerValueFromElement(element, MEGABYTES_COUNT_ELEMENT_NAME);
-        Double megaBytePrice = getDoubleValueFromElement(element, MEGABYTE_PRICE_ELEMENT_NAME);
+        Integer megaBytesCount = injectIntegerValueFromElement(element, MEGABYTES_COUNT_ELEMENT_NAME);
+        Double megaBytePrice = injectDoubleValueFromElement(element, MEGABYTE_PRICE_ELEMENT_NAME);
 
         internetForMobileTariff.setMegaBytesCount(megaBytesCount);
         internetForMobileTariff.setMegaBytePrice(megaBytePrice);

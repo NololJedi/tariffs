@@ -15,7 +15,7 @@ public class JAXBParser implements Parser {
 
     private static final Logger LOGGER = Logger.getLogger(JAXBParser.class);
 
-    public Tariffs parseTariffsFromFile(String xmlFilePath) throws XMLParserException, IncorrectFileException {
+    public Tariffs parse(String xmlFilePath) throws XMLParserException, IncorrectFileException {
         if (xmlFilePath == null || xmlFilePath.isEmpty()) {
             throw new IllegalArgumentException("Incorrect path for xml file");
         }
